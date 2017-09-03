@@ -1,6 +1,8 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 using UniRx;
+using HK.Framework.Text;
+using System.Text;
 
 namespace HK.Nanka
 {
@@ -16,6 +18,9 @@ namespace HK.Nanka
         [SerializeField]
         private Text requireItemText;
 
+        [SerializeField]
+        private StringAsset.Finder requireItemFormat;
+
         private Button cachedButton;
 
         void Awake()
@@ -28,7 +33,17 @@ namespace HK.Nanka
             var spec = specs.Get(itemId);
             this.nameText.text = spec.Name;
             this.descriptionText.text = spec.Description;
-            this.requireItemText.text = "";
+            var requireItemTextBuilder = new StringBuilder();
+            for(var i=0; i<spec.Recipe.RequireItems.Count; ++i)
+            {
+                var r = spec.Recipe.RequireItems[i];
+                requireItemTextBuilder.Append(this.requireItemFormat.Format(specs.Get(r.ItemId).Name, inventory.GetNumber(r.ItemId), r.Number));
+                if((i + 1) < spec.Recipe.RequireItems.Count)
+                {
+                    requireItemTextBuilder.AppendLine();
+                }
+            }
+            this.requireItemText.text = requireItemTextBuilder.ToString();
 
             this.cachedButton.OnClickAsObservable()
                 .TakeUntilDisable(this)

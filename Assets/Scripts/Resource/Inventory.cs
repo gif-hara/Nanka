@@ -43,6 +43,16 @@ namespace HK.Nanka
             }
         }
 
+        public int GetNumber(int itemId)
+        {
+            if(!this.Items.ContainsKey(itemId))
+            {
+                return 0;
+            }
+
+            return this.Items[itemId];
+        }
+
         public List<ItemSpec> GetCraftingList(ItemSpecs specs)
         {
             return specs.CachedToolSpecs.Where(t => t.Recipe.CanVisibleList(this)).ToList();
