@@ -20,6 +20,9 @@ namespace HK.Nanka
             }
 
             this.Items[itemId]++;
+
+            var itemSpecs = GameController.Instance.ItemSpecs;
+            Debug.Log(string.Format("{0} x {1}", itemSpecs.Get(itemId).Name, this.Items[itemId]));
         }
     }
 }
