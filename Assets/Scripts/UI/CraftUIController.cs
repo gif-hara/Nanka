@@ -2,6 +2,7 @@
 using HK.Nanka.Events;
 using HK.Framework.EventSystems;
 using UniRx;
+using System.Collections.Generic;
 
 namespace HK.Nanka
 {
@@ -12,6 +13,9 @@ namespace HK.Nanka
 
         [SerializeField]
         private Transform scrollViewParent;
+
+        [SerializeField]
+        private List<CraftElementUIController> instanceElements = new List<CraftElementUIController>();
 
         void Awake()
         {
@@ -42,15 +46,17 @@ namespace HK.Nanka
             {
                 var element = Instantiate(this.elementPrefab, this.scrollViewParent, false);
                 element.Initialize(inventory, itemSpecs, i.Id);
+                this.instanceElements.Add(element);
             }
         }
 
         private void DestroyList()
         {
-            for(int i=0, imax=this.scrollViewParent.childCount; i<imax; ++i)
+            foreach(var e in this.instanceElements)
             {
-                Destroy(this.scrollViewParent.GetChild(0).gameObject);
+                Destroy(e.gameObject);
             }
+            this.instanceElements.Clear();
         }
     }
 }
