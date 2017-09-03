@@ -175,15 +175,20 @@ MonoBehaviour:
         number: 5
   - name:
       target: {fileID: 11400000, guid: 453738916714c41ddbb761f80ccf98c5, type: 2}
-      value: "\u9280\u9244\u96FB\u7DDA"
-      guid: 05a4e8d6-7aac-4ab3-b382-bea7b939567a
+      value: "\u9285\u7DDA"
+      guid: 2ac6c98c-c195-4491-b4ce-878893ab8443
     description:
       target: {fileID: 11400000, guid: bce9887c23ace440fad2c1da9ae2e923, type: 2}
       value: "\u9285\u7DDA\u306E\u8AAC\u660E"
       guid: c8fe8c11-e80b-4b0b-ac3e-1ca73abea795
     type: 0
     requireItem:
-      requireItems: []
+      requireItems:
+      - itemName:
+          target: {fileID: 11400000, guid: 453738916714c41ddbb761f80ccf98c5, type: 2}
+          value: "\u9AD8\u7D1A\u4F5C\u696D\u53F0"
+          guid: 9d3288bc-e5c4-44db-ab5b-115203298b31
+        number: 0
     recipe:
       requireItems:
       - itemName:
@@ -193,8 +198,8 @@ MonoBehaviour:
         number: 2
   - name:
       target: {fileID: 11400000, guid: 453738916714c41ddbb761f80ccf98c5, type: 2}
-      value: "\u91D1\u9244\u96FB\u7DDA"
-      guid: 2a89cf31-95fc-4711-9311-d25eb3bedab0
+      value: "\u9280\u9244\u96FB\u7DDA"
+      guid: 05a4e8d6-7aac-4ab3-b382-bea7b939567a
     description:
       target: {fileID: 11400000, guid: bce9887c23ace440fad2c1da9ae2e923, type: 2}
       value: "\u9280\u9244\u96FB\u7DDA\u306E\u8AAC\u660E"
@@ -216,8 +221,8 @@ MonoBehaviour:
         number: 5
   - name:
       target: {fileID: 11400000, guid: 453738916714c41ddbb761f80ccf98c5, type: 2}
-      value: "\u96FB\u5B50\u57FA\u677F"
-      guid: d990a153-075e-4764-87cc-1e63f0f089c7
+      value: "\u91D1\u9244\u96FB\u7DDA"
+      guid: 2a89cf31-95fc-4711-9311-d25eb3bedab0
     description:
       target: {fileID: 11400000, guid: bce9887c23ace440fad2c1da9ae2e923, type: 2}
       value: "\u91D1\u9244\u96FB\u7DDA\u306E\u8AAC\u660E"
@@ -239,8 +244,8 @@ MonoBehaviour:
         number: 7
   - name:
       target: {fileID: 11400000, guid: 453738916714c41ddbb761f80ccf98c5, type: 2}
-      value: "\u9AD8\u5EA6\u96FB\u5B50\u57FA\u677F"
-      guid: 849efe77-ee7a-4c0a-81ca-3a39a7fcdf52
+      value: "\u96FB\u5B50\u57FA\u677F"
+      guid: d990a153-075e-4764-87cc-1e63f0f089c7
     description:
       target: {fileID: 11400000, guid: bce9887c23ace440fad2c1da9ae2e923, type: 2}
       value: "\u96FB\u5B50\u57FA\u677F\u306E\u8AAC\u660E"
@@ -250,8 +255,8 @@ MonoBehaviour:
       requireItems:
       - itemName:
           target: {fileID: 11400000, guid: 453738916714c41ddbb761f80ccf98c5, type: 2}
-          value: "\u9AD8\u7D1A\u4F5C\u696D\u53F0"
-          guid: 9d3288bc-e5c4-44db-ab5b-115203298b31
+          value: "\u4F5C\u696D\u53F0"
+          guid: 8c2248d1-db12-4c4f-a136-edb1dea10c24
         number: 1
     recipe:
       requireItems:
