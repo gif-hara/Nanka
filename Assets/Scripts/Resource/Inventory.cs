@@ -60,7 +60,7 @@ namespace HK.Nanka
 
         public List<ItemSpec> GetCraftingList(ItemSpecs specs)
         {
-            return specs.CachedCraftingSpecs.Where(t => t.Recipe.CanVisibleList(this)).ToList();
+            return specs.CachedCraftingSpecs.Where(t => t.Recipe.CanVisibleList(this) && t.RequireItem.CanVisibleList(this)).ToList();
         }
     }
 }

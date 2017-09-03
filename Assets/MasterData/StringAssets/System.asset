@@ -13,6 +13,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   database:
   - value:
-      ja: "\u30FB{0} {1}/{2}"
+      ja: '- {0} {1}/{2}'
       en: 
     guid: 43fff543-1d2c-41da-865a-f44ed4415e86
+  - value:
+      ja: "\u5FC5\u8981\u306A\u7D20\u6750"
+      en: 
+    guid: 6141497a-7e0b-4723-abce-b019a98d0013
+  - value:
+      ja: "\u5FC5\u8981\u306A\u9053\u5177"
+      en: 
+    guid: 8df4e0d7-37e8-4da6-b63c-518db74354b6

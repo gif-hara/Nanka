@@ -18,7 +18,16 @@ namespace HK.Nanka
         private Text descriptionText;
 
         [SerializeField]
+        private Text requireElementText;
+
+        [SerializeField]
         private Text requireItemText;
+
+        [SerializeField]
+        private StringAsset.Finder requireElementHeader;
+
+        [SerializeField]
+        private StringAsset.Finder requireItemHeader;
 
         [SerializeField]
         private StringAsset.Finder requireItemFormat;
@@ -59,17 +68,24 @@ namespace HK.Nanka
         {
             this.nameText.text = spec.Name;
             this.descriptionText.text = spec.Description;
-            var requireItemTextBuilder = new StringBuilder();
-            for(var i=0; i<spec.Recipe.RequireItems.Count; ++i)
+            this.BuildTextOnRecipe(inventory, spec.Recipe, this.requireElementHeader.Get, this.requireElementText);
+            this.BuildTextOnRecipe(inventory, spec.RequireItem, this.requireItemHeader.Get, this.requireItemText);
+        }
+
+        private void BuildTextOnRecipe(Inventory inventory, Recipe recipe, string header, Text text)
+        {
+            var builder = new StringBuilder();
+            builder.AppendLine(header);
+            for(var i=0; i<recipe.RequireItems.Count; ++i)
             {
-                var r = spec.Recipe.RequireItems[i];
-                requireItemTextBuilder.Append(this.requireItemFormat.Format(r.Item.Name, inventory.GetNumber(r.ItemName), r.Number));
-                if((i + 1) < spec.Recipe.RequireItems.Count)
+                var r = recipe.RequireItems[i];
+                builder.Append(this.requireItemFormat.Format(r.Item.Name, inventory.GetNumber(r.ItemName), r.Number));
+                if((i + 1) < recipe.RequireItems.Count)
                 {
-                    requireItemTextBuilder.AppendLine();
+                    builder.AppendLine();
                 }
             }
-            this.requireItemText.text = requireItemTextBuilder.ToString();
+            text.text = builder.ToString();
         }
     }
 }

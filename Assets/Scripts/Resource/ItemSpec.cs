@@ -19,6 +19,9 @@ namespace HK.Nanka
         private ItemType type;
 
         [SerializeField]
+        private Recipe requireItem;
+
+        [SerializeField]
         private Recipe recipe;
 
         public void Initialize()
@@ -33,6 +36,8 @@ namespace HK.Nanka
         public string Description { get { return this.description.Get; } }
 
         public ItemType Type { get { return this.type; } }
+
+        public Recipe RequireItem { get { return this.requireItem; } }
 
         public Recipe Recipe { get { return this.recipe; } }
     }
