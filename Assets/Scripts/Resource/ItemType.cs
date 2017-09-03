@@ -5,15 +5,11 @@ namespace HK.Nanka
     public enum ItemType
     {
         /// <summary>
-        /// 鉱石
+        /// 素材
         /// </summary>
-        Ore,
+        Material,
         /// <summary>
-        /// 木材
-        /// </summary>
-        Wood,
-        /// <summary>
-        /// ツール
+        /// 道具
         /// </summary>
         Tool,
     }

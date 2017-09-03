@@ -63,7 +63,7 @@ namespace HK.Nanka
             for(var i=0; i<spec.Recipe.RequireItems.Count; ++i)
             {
                 var r = spec.Recipe.RequireItems[i];
-                requireItemTextBuilder.Append(this.requireItemFormat.Format(spec.Name, inventory.GetNumber(r.ItemId), r.Number));
+                requireItemTextBuilder.Append(this.requireItemFormat.Format(r.Item.Name, inventory.GetNumber(r.ItemId), r.Number));
                 if((i + 1) < spec.Recipe.RequireItems.Count)
                 {
                     requireItemTextBuilder.AppendLine();

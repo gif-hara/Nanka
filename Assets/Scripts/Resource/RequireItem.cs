@@ -25,6 +25,8 @@ namespace HK.Nanka
 
         public int Number { get { return this.number; } }
 
+        public ItemSpec Item { get { return GameController.Instance.ItemSpecs.Get(this.ItemId); } }
+
         /// <summary>
         /// 生可能か返す
         /// </summary>

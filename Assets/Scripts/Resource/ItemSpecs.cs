@@ -13,11 +13,19 @@ namespace HK.Nanka
         
         public List<ItemSpec> Specs { get { return this.specs; } }
 
-        public ItemSpec[] CachedToolSpecs { private set; get; }
+        public ItemSpec[] CachedCraftingSpecs { private set; get; }
+
+#if UNITY_EDITOR
+        [ContextMenu("Sort")]
+        private void Sort()
+        {
+            this.specs.Sort((x, y) => x.Id - y.Id);
+        }
+#endif
 
         public void Initialize()
         {
-            this.CachedToolSpecs = this.specs.Where(s => s.Type == ItemType.Tool).ToArray();
+            this.CachedCraftingSpecs = this.specs.Where(s => s.Recipe.RequireItems.Count > 0).ToArray();
         }
 
         public ItemSpec Get(int id)

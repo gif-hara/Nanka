@@ -12,7 +12,7 @@ namespace HK.Nanka
     public sealed class ExpeditionButtonController : MonoBehaviour
     {
         [SerializeField]
-        private ItemType itemType;
+        private Collect collect;
 
         void Awake()
         {
@@ -22,10 +22,8 @@ namespace HK.Nanka
             button.OnClickAsObservable()
                 .SubscribeWithState(this, (_, _this) =>
                 {
-                    var gameController = GameController.Instance;
-                    var itemSpecs = gameController.ItemSpecs;
-                    var inventory = gameController.Player.Inventory;
-                    inventory.Add(itemSpecs.Specs.Find(i => i.Type == _this.itemType).Id);
+                    var inventory = GameController.Instance.Player.Inventory;
+                    _this.collect.Collecting(inventory);
                 });
         }
     }
