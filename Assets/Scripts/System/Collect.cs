@@ -25,12 +25,21 @@ namespace HK.Nanka
         {
             // デフォルトで取得出来るアイテム
             inventory.Add(this.defaultCollectable.RandomAcquireItemId);
+            this.UseItem(inventory);
+        }
 
+        private void UseItem(Inventory inventory)
+        {
             foreach(var c in this.collectableItems)
             {
-                if(inventory.Items.ContainsKey(c.ItemId))
+                if(inventory.IsPossession(c.ItemId))
                 {
                     inventory.Add(c.RandomAcquireItemId);
+                    // 確率で採掘アイテムは削除される
+                    if(UnityEngine.Random.Range(0.0f, 1.0f) < c.BreakProbability)
+                    {
+                        inventory.Remove(c.ItemId, 1);
+                    }
                 }
             }
         }

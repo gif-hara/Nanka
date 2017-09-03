@@ -25,14 +25,14 @@ MonoBehaviour:
       weight: 100
   collectableItems:
   - itemId: 2001
-    breakProbability: 0
+    breakProbability: 0.75
     acquireItemWeights:
     - itemId: 1001
       weight: 100
     - itemId: 1005
       weight: 60
   - itemId: 2002
-    breakProbability: 0
+    breakProbability: 0.75
     acquireItemWeights:
     - itemId: 1001
       weight: 80

@@ -32,7 +32,7 @@ namespace HK.Nanka
         {
             Assert.IsTrue(this.Items.ContainsKey(itemId));
             this.Items[itemId] -= number;
-            Assert.IsTrue(this.Items[itemId] >= 0);
+            Assert.IsTrue(this.Items[itemId] >= 0, string.Format("{0}の所持数が{1}になりました", itemId, this.Items[itemId]));
         }
 
         public void Remove(Recipe recipe)
@@ -51,6 +51,11 @@ namespace HK.Nanka
             }
 
             return this.Items[itemId];
+        }
+
+        public bool IsPossession(int itemId)
+        {
+            return this.GetNumber(itemId) > 0;
         }
 
         public List<ItemSpec> GetCraftingList(ItemSpecs specs)
