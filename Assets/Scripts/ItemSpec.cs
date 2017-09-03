@@ -9,6 +9,9 @@ namespace HK.Nanka
         [SerializeField]
         private string name;
 
+        [SerializeField]
+        private Recipe recipe;
+
         public string Name { get { return this.name; } }
     }
 }

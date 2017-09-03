@@ -11,3 +11,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab3849f893c4f4a979f7f0409ff8b77e, type: 3}
   m_Name: ItemSpecs
   m_EditorClassIdentifier: 
+  specs:
+  - name: "\u77F3"
+    recipe:
+      requireItems: []
+  - name: "\u6728\u6750"
+    recipe:
+      requireItems: []
+  - name: "\u77F3\u306E\u65A7"
+    recipe:
+      requireItems:
+      - itemId: 0
+        number: 2
+      - itemId: 1
+        number: 1
