@@ -58,7 +58,10 @@ namespace HK.Framework.Editor.Text
 				valueProperty.FindPropertyRelative("en").stringValue = "";
 				property.FindPropertyRelative("guid").stringValue = System.Guid.NewGuid().ToString();
 			};
-
+			reorderableList.onReorderCallback = (ReorderableList list) =>
+			{
+				StringAssetFinderDrawer.RemoveCachedDictionary(this.Target);
+			};
 		}
 
 		public override void OnInspectorGUI()
