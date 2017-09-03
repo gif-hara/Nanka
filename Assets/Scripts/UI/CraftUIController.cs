@@ -45,7 +45,7 @@ namespace HK.Nanka
             foreach(var i in visibleList)
             {
                 var element = Instantiate(this.elementPrefab, this.scrollViewParent, false);
-                element.Initialize(inventory, itemSpecs, i.Id);
+                element.Initialize(inventory, itemSpecs, i.Hash);
                 this.instanceElements.Add(element);
             }
         }

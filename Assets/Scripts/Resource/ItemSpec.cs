@@ -7,8 +7,7 @@ namespace HK.Nanka
     [Serializable]
     public sealed class ItemSpec
     {
-        [SerializeField]
-        private int id;
+        private int hash;
 
         [SerializeField]
         private StringAsset.Finder name;
@@ -22,7 +21,12 @@ namespace HK.Nanka
         [SerializeField]
         private Recipe recipe;
 
-        public int Id { get { return this.id; } }
+        public void Initialize()
+        {
+            this.hash = this.name.Get.GetHashCode();
+        }
+
+        public int Hash { get { return this.hash; } }
 
         public string Name { get { return this.name.Get; } }
 

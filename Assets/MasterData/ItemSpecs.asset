@@ -12,8 +12,7 @@ MonoBehaviour:
   m_Name: ItemSpecs
   m_EditorClassIdentifier: 
   specs:
-  - id: 1001
-    name:
+  - name:
       target: {fileID: 11400000, guid: 453738916714c41ddbb761f80ccf98c5, type: 2}
       value: "\u77F3"
       guid: 0aa5fdc5-e16f-4d05-abf4-29eb539b1e7a
@@ -24,8 +23,7 @@ MonoBehaviour:
     type: 0
     recipe:
       requireItems: []
-  - id: 1002
-    name:
+  - name:
       target: {fileID: 11400000, guid: 453738916714c41ddbb761f80ccf98c5, type: 2}
       value: "\u6728\u6750"
       guid: 31270558-457b-4279-a007-1b0bf0bf873d
@@ -36,8 +34,7 @@ MonoBehaviour:
     type: 0
     recipe:
       requireItems: []
-  - id: 1003
-    name:
+  - name:
       target: {fileID: 11400000, guid: 453738916714c41ddbb761f80ccf98c5, type: 2}
       value: "\u77F3\u70AD"
       guid: 3e32e98a-734a-4076-83dd-0d99dc2688d3
@@ -48,8 +45,7 @@ MonoBehaviour:
     type: 0
     recipe:
       requireItems: []
-  - id: 1004
-    name:
+  - name:
       target: {fileID: 11400000, guid: 453738916714c41ddbb761f80ccf98c5, type: 2}
       value: "\u7802"
       guid: c0856568-7941-46f4-adcc-72a728448597
@@ -60,8 +56,7 @@ MonoBehaviour:
     type: 0
     recipe:
       requireItems: []
-  - id: 1005
-    name:
+  - name:
       target: {fileID: 11400000, guid: 453738916714c41ddbb761f80ccf98c5, type: 2}
       value: "\u9244\u9271\u77F3"
       guid: ffe618b7-3ffd-46b1-8010-8792f31d1e19
@@ -72,8 +67,7 @@ MonoBehaviour:
     type: 0
     recipe:
       requireItems: []
-  - id: 1006
-    name:
+  - name:
       target: {fileID: 11400000, guid: 453738916714c41ddbb761f80ccf98c5, type: 2}
       value: "\u9285\u9271\u77F3"
       guid: f63940f4-7be7-47b4-b2bf-1d7cc7aea2c3
@@ -84,8 +78,7 @@ MonoBehaviour:
     type: 0
     recipe:
       requireItems: []
-  - id: 1007
-    name:
+  - name:
       target: {fileID: 11400000, guid: 453738916714c41ddbb761f80ccf98c5, type: 2}
       value: "\u9280\u9271\u77F3"
       guid: db78622c-77fa-42a8-a981-fdee158b3989
@@ -96,8 +89,7 @@ MonoBehaviour:
     type: 0
     recipe:
       requireItems: []
-  - id: 1008
-    name:
+  - name:
       target: {fileID: 11400000, guid: 453738916714c41ddbb761f80ccf98c5, type: 2}
       value: "\u91D1\u9271\u77F3"
       guid: 2d1ca0fd-b35b-474f-836a-bee5a27b84b9
@@ -108,8 +100,7 @@ MonoBehaviour:
     type: 0
     recipe:
       requireItems: []
-  - id: 1009
-    name:
+  - name:
       target: {fileID: 11400000, guid: 453738916714c41ddbb761f80ccf98c5, type: 2}
       value: "\u30DF\u30B9\u30EA\u30EB\u9271\u77F3"
       guid: 438387e0-8056-454a-bfca-ddca146e8468
@@ -120,8 +111,7 @@ MonoBehaviour:
     type: 0
     recipe:
       requireItems: []
-  - id: 1010
-    name:
+  - name:
       target: {fileID: 11400000, guid: 453738916714c41ddbb761f80ccf98c5, type: 2}
       value: "\u30C1\u30BF\u30F3\u9271\u77F3"
       guid: 06e4185f-0e4d-4759-b3a0-f44aa3ff3aee
@@ -132,8 +122,7 @@ MonoBehaviour:
     type: 0
     recipe:
       requireItems: []
-  - id: 1011
-    name:
+  - name:
       target: {fileID: 11400000, guid: 453738916714c41ddbb761f80ccf98c5, type: 2}
       value: "\u30C0\u30A4\u30E4\u30E2\u30F3\u30C9"
       guid: 0d9175a2-02d9-4add-aa75-4a4d268cb83d
@@ -144,8 +133,7 @@ MonoBehaviour:
     type: 0
     recipe:
       requireItems: []
-  - id: 1101
-    name:
+  - name:
       target: {fileID: 11400000, guid: 453738916714c41ddbb761f80ccf98c5, type: 2}
       value: "\u30AC\u30E9\u30B9"
       guid: 6d239072-fb59-4c6e-b36f-d0a81d4033fa
@@ -156,10 +144,12 @@ MonoBehaviour:
     type: 0
     recipe:
       requireItems:
-      - itemId: 1004
+      - itemName:
+          target: {fileID: 11400000, guid: 453738916714c41ddbb761f80ccf98c5, type: 2}
+          value: "\u7802"
+          guid: c0856568-7941-46f4-adcc-72a728448597
         number: 5
-  - id: 1102
-    name:
+  - name:
       target: {fileID: 11400000, guid: 453738916714c41ddbb761f80ccf98c5, type: 2}
       value: "\u6728\u70AD"
       guid: 363d1ea4-6b0e-48a3-9bb9-1bd537b6d09b
@@ -170,10 +160,12 @@ MonoBehaviour:
     type: 0
     recipe:
       requireItems:
-      - itemId: 1002
+      - itemName:
+          target: {fileID: 11400000, guid: 453738916714c41ddbb761f80ccf98c5, type: 2}
+          value: "\u6728\u6750"
+          guid: 31270558-457b-4279-a007-1b0bf0bf873d
         number: 3
-  - id: 1103
-    name:
+  - name:
       target: {fileID: 11400000, guid: 453738916714c41ddbb761f80ccf98c5, type: 2}
       value: "\u9285\u7DDA"
       guid: 2ac6c98c-c195-4491-b4ce-878893ab8443
@@ -184,10 +176,12 @@ MonoBehaviour:
     type: 0
     recipe:
       requireItems:
-      - itemId: 1006
+      - itemName:
+          target: {fileID: 11400000, guid: 453738916714c41ddbb761f80ccf98c5, type: 2}
+          value: "\u80F4\u306E\u30A4\u30F3\u30B4\u30C3\u30C8"
+          guid: d16df955-79e9-4935-9bc6-b3a5b11ae042
         number: 2
-  - id: 1104
-    name:
+  - name:
       target: {fileID: 11400000, guid: 453738916714c41ddbb761f80ccf98c5, type: 2}
       value: "\u9280\u9244\u96FB\u7DDA"
       guid: 05a4e8d6-7aac-4ab3-b382-bea7b939567a
@@ -198,12 +192,17 @@ MonoBehaviour:
     type: 0
     recipe:
       requireItems:
-      - itemId: 1005
+      - itemName:
+          target: {fileID: 11400000, guid: 453738916714c41ddbb761f80ccf98c5, type: 2}
+          value: "\u9244\u306E\u30A4\u30F3\u30B4\u30C3\u30C8"
+          guid: bc8f898c-83df-4fe6-ae7d-4dda1c1a01ed
         number: 2
-      - itemId: 1007
+      - itemName:
+          target: {fileID: 11400000, guid: 453738916714c41ddbb761f80ccf98c5, type: 2}
+          value: "\u9280\u306E\u30A4\u30F3\u30B4\u30C3\u30C8"
+          guid: 6cef1e94-cc28-42f9-90b5-3968adb7ede5
         number: 5
-  - id: 1105
-    name:
+  - name:
       target: {fileID: 11400000, guid: 453738916714c41ddbb761f80ccf98c5, type: 2}
       value: "\u91D1\u9244\u96FB\u7DDA"
       guid: 2a89cf31-95fc-4711-9311-d25eb3bedab0
@@ -214,12 +213,17 @@ MonoBehaviour:
     type: 0
     recipe:
       requireItems:
-      - itemId: 1005
+      - itemName:
+          target: {fileID: 11400000, guid: 453738916714c41ddbb761f80ccf98c5, type: 2}
+          value: "\u92FC\u9244\u306E\u30A4\u30F3\u30B4\u30C3\u30C8"
+          guid: fe5014aa-9196-4874-b7ea-6bceb74743ca
         number: 4
-      - itemId: 1008
+      - itemName:
+          target: {fileID: 11400000, guid: 453738916714c41ddbb761f80ccf98c5, type: 2}
+          value: "\u91D1\u306E\u30A4\u30F3\u30B4\u30C3\u30C8"
+          guid: 8e73ee7d-0427-4f89-8e73-45c3106d2f3b
         number: 7
-  - id: 2001
-    name:
+  - name:
       target: {fileID: 11400000, guid: 453738916714c41ddbb761f80ccf98c5, type: 2}
       value: "\u77F3\u306E\u30C4\u30EB\u30CF\u30B7"
       guid: 23554b7c-7cc7-46c2-8a36-4caa176a5906
@@ -230,12 +234,17 @@ MonoBehaviour:
     type: 1
     recipe:
       requireItems:
-      - itemId: 1001
+      - itemName:
+          target: {fileID: 11400000, guid: 453738916714c41ddbb761f80ccf98c5, type: 2}
+          value: "\u77F3"
+          guid: 0aa5fdc5-e16f-4d05-abf4-29eb539b1e7a
         number: 5
-      - itemId: 1002
+      - itemName:
+          target: {fileID: 11400000, guid: 453738916714c41ddbb761f80ccf98c5, type: 2}
+          value: "\u6728\u6750"
+          guid: 31270558-457b-4279-a007-1b0bf0bf873d
         number: 3
-  - id: 2002
-    name:
+  - name:
       target: {fileID: 11400000, guid: 453738916714c41ddbb761f80ccf98c5, type: 2}
       value: "\u9244\u306E\u30C4\u30EB\u30CF\u30B7"
       guid: e82af497-7793-4158-88aa-1e18b3ab1b38
@@ -246,7 +255,13 @@ MonoBehaviour:
     type: 1
     recipe:
       requireItems:
-      - itemId: 1005
+      - itemName:
+          target: {fileID: 11400000, guid: 453738916714c41ddbb761f80ccf98c5, type: 2}
+          value: "\u9244\u9271\u77F3"
+          guid: ffe618b7-3ffd-46b1-8010-8792f31d1e19
         number: 8
-      - itemId: 1002
+      - itemName:
+          target: {fileID: 11400000, guid: 453738916714c41ddbb761f80ccf98c5, type: 2}
+          value: "\u6728\u6750"
+          guid: 31270558-457b-4279-a007-1b0bf0bf873d
         number: 5

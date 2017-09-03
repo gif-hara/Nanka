@@ -14,48 +14,48 @@ namespace HK.Nanka
             this.Items = new Dictionary<int, int>();
         }
 
-        public void Add(int itemId, int number = 1)
+        public void Add(int itemHash, int number = 1)
         {
             Assert.IsTrue(number >= 1);
-            if(!this.Items.ContainsKey(itemId))
+            if(!this.Items.ContainsKey(itemHash))
             {
-                this.Items.Add(itemId, 0);
+                this.Items.Add(itemHash, 0);
             }
 
-            this.Items[itemId] += number;
+            this.Items[itemHash] += number;
 
             var itemSpecs = GameController.Instance.ItemSpecs;
-            Debug.Log(string.Format("{0} x {1}", itemSpecs.Get(itemId).Name, this.Items[itemId]));
+            Debug.Log(string.Format("{0} x {1}", itemSpecs.Get(itemHash).Name, this.Items[itemHash]));
         }
 
-        public void Remove(int itemId, int number)
+        public void Remove(int itemHash, int number)
         {
-            Assert.IsTrue(this.Items.ContainsKey(itemId));
-            this.Items[itemId] -= number;
-            Assert.IsTrue(this.Items[itemId] >= 0, string.Format("{0}の所持数が{1}になりました", itemId, this.Items[itemId]));
+            Assert.IsTrue(this.Items.ContainsKey(itemHash));
+            this.Items[itemHash] -= number;
+            Assert.IsTrue(this.Items[itemHash] >= 0, string.Format("{0}の所持数が{1}になりました", itemHash, this.Items[itemHash]));
         }
 
         public void Remove(Recipe recipe)
         {
             foreach(var i in recipe.RequireItems)
             {
-                this.Remove(i.ItemId, i.Number);
+                this.Remove(i.ItemName, i.Number);
             }
         }
 
-        public int GetNumber(int itemId)
+        public int GetNumber(int itemHash)
         {
-            if(!this.Items.ContainsKey(itemId))
+            if(!this.Items.ContainsKey(itemHash))
             {
                 return 0;
             }
 
-            return this.Items[itemId];
+            return this.Items[itemHash];
         }
 
-        public bool IsPossession(int itemId)
+        public bool IsPossession(int itemHash)
         {
-            return this.GetNumber(itemId) > 0;
+            return this.GetNumber(itemHash) > 0;
         }
 
         public List<ItemSpec> GetCraftingList(ItemSpecs specs)

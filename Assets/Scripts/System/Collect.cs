@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using HK.Framework.Text;
 using UnityEngine;
 using UnityEngine.Assertions;
 
@@ -24,7 +25,7 @@ namespace HK.Nanka
         public void Collecting(Inventory inventory)
         {
             // デフォルトで取得出来るアイテム
-            inventory.Add(this.defaultCollectable.RandomAcquireItemId);
+            inventory.Add(this.defaultCollectable.RandomAcquireItemName);
             this.UseItem(inventory);
         }
 
@@ -32,13 +33,13 @@ namespace HK.Nanka
         {
             foreach(var c in this.collectableItems)
             {
-                if(inventory.IsPossession(c.ItemId))
+                if(inventory.IsPossession(c.ItemHash))
                 {
-                    inventory.Add(c.RandomAcquireItemId);
+                    inventory.Add(c.RandomAcquireItemName);
                     // 確率で採掘アイテムは削除される
                     if(UnityEngine.Random.Range(0.0f, 1.0f) < c.BreakProbability)
                     {
-                        inventory.Remove(c.ItemId, 1);
+                        inventory.Remove(c.ItemHash, 1);
                     }
                 }
             }
@@ -48,7 +49,7 @@ namespace HK.Nanka
         public class CollectableItem
         {
             [SerializeField]
-            private int itemId;
+            private StringAsset.Finder itemName;
             
             [SerializeField][Range(0.0f, 1.0f)]
             private float breakProbability;
@@ -56,13 +57,13 @@ namespace HK.Nanka
             [SerializeField]
             private List<ItemWeight> acquireItemWeights;
 
-            public int ItemId { get { return this.itemId; } }
+            public int ItemHash { get { return this.itemName.Get.GetHashCode(); } }
 
             public float BreakProbability { get { return this.breakProbability; } }
 
             public List<ItemWeight> AcquireItemWeights { get { return this.acquireItemWeights; } }
 
-            public int RandomAcquireItemId
+            public int RandomAcquireItemName
             {
                 get
                 {
@@ -75,7 +76,7 @@ namespace HK.Nanka
         public class ItemWeight
         {
             [SerializeField]
-            private int itemId;
+            private StringAsset.Finder itemName;
 
             [SerializeField]
             private int weight;
@@ -93,7 +94,7 @@ namespace HK.Nanka
                 {
                     if(random >= weight && random < (weight + w.weight))
                     {
-                        return w.itemId;
+                        return w.itemName.Get.GetHashCode();
                     }
                     weight += w.weight;
                 }

@@ -10,28 +10,31 @@ namespace HK.Nanka
     {
         [SerializeField]
         private List<ItemSpec> specs;
-        
-        public List<ItemSpec> Specs { get { return this.specs; } }
 
         public ItemSpec[] CachedCraftingSpecs { private set; get; }
 
-#if UNITY_EDITOR
-        [ContextMenu("Sort")]
-        private void Sort()
-        {
-            this.specs.Sort((x, y) => x.Id - y.Id);
-        }
-#endif
+        private Dictionary<int, ItemSpec> cachedSpecs;
+
+        private Dictionary<string, int> cachedHashes;
 
         public void Initialize()
         {
+            this.cachedSpecs = new Dictionary<int, ItemSpec>();
+            this.cachedHashes = new Dictionary<string, int>();
+            this.specs.ForEach(s =>
+            {
+                s.Initialize();
+                this.cachedSpecs.Add(s.Hash, s);
+                this.cachedHashes.Add(s.Name, s.Hash);
+            });
+            
             this.CachedCraftingSpecs = this.specs.Where(s => s.Recipe.RequireItems.Count > 0).ToArray();
         }
 
-        public ItemSpec Get(int id)
+        public ItemSpec Get(int itemHash)
         {
-            var result = this.specs.Find(i => i.Id == id);
-            Assert.IsNotNull(result, string.Format("id = {0}のアイテムはありません", id));
+            var result = this.cachedSpecs[itemHash];
+            Assert.IsNotNull(result, string.Format("{0}と言うアイテムはありません", itemHash));
             return result;
         }
     }

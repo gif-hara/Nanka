@@ -1,4 +1,5 @@
 ﻿using System;
+using HK.Framework.Text;
 using UnityEngine;
 
 namespace HK.Nanka
@@ -13,7 +14,7 @@ namespace HK.Nanka
         /// アイテムID
         /// </summary>
         [SerializeField]
-        private int itemId;
+        private StringAsset.Finder itemName;
 
         /// <summary>
         /// 必要個数
@@ -21,18 +22,18 @@ namespace HK.Nanka
         [SerializeField]
         private int number;
 
-        public int ItemId { get { return this.itemId; } }
+        public int ItemName { get { return this.itemName.Get.GetHashCode(); } }
 
         public int Number { get { return this.number; } }
 
-        public ItemSpec Item { get { return GameController.Instance.ItemSpecs.Get(this.ItemId); } }
+        public ItemSpec Item { get { return GameController.Instance.ItemSpecs.Get(this.ItemName); } }
 
         /// <summary>
-        /// 生可能か返す
+        /// 生成可能か返す
         /// </summary>
         public bool CanCreate(Inventory inventory)
         {
-            return inventory.Items[itemId] >= this.number;
+            return inventory.Items[this.ItemName] >= this.number;
         }
 
         /// <summary>
@@ -40,7 +41,7 @@ namespace HK.Nanka
         /// </summary>
         public bool IsPossession(Inventory inventory)
         {
-            return inventory.Items.ContainsKey(this.itemId);
+            return inventory.Items.ContainsKey(this.ItemName);
         }
     }
 }

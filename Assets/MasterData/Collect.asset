@@ -12,31 +12,67 @@ MonoBehaviour:
   m_Name: Collect
   m_EditorClassIdentifier: 
   defaultCollectable:
-    itemId: 0
+    itemName:
+      target: {fileID: 0}
+      value: 
+      guid: 
     breakProbability: 0
     acquireItemWeights:
-    - itemId: 1001
+    - itemName:
+        target: {fileID: 11400000, guid: 453738916714c41ddbb761f80ccf98c5, type: 2}
+        value: "\u77F3"
+        guid: 0aa5fdc5-e16f-4d05-abf4-29eb539b1e7a
       weight: 100
-    - itemId: 1002
+    - itemName:
+        target: {fileID: 11400000, guid: 453738916714c41ddbb761f80ccf98c5, type: 2}
+        value: "\u6728\u6750"
+        guid: 31270558-457b-4279-a007-1b0bf0bf873d
       weight: 100
-    - itemId: 1003
+    - itemName:
+        target: {fileID: 11400000, guid: 453738916714c41ddbb761f80ccf98c5, type: 2}
+        value: "\u77F3\u70AD"
+        guid: 3e32e98a-734a-4076-83dd-0d99dc2688d3
       weight: 100
-    - itemId: 1004
+    - itemName:
+        target: {fileID: 11400000, guid: 453738916714c41ddbb761f80ccf98c5, type: 2}
+        value: "\u7802"
+        guid: c0856568-7941-46f4-adcc-72a728448597
       weight: 100
   collectableItems:
-  - itemId: 2001
+  - itemName:
+      target: {fileID: 11400000, guid: 453738916714c41ddbb761f80ccf98c5, type: 2}
+      value: "\u77F3\u306E\u30C4\u30EB\u30CF\u30B7"
+      guid: 23554b7c-7cc7-46c2-8a36-4caa176a5906
     breakProbability: 0.75
     acquireItemWeights:
-    - itemId: 1001
+    - itemName:
+        target: {fileID: 11400000, guid: 453738916714c41ddbb761f80ccf98c5, type: 2}
+        value: "\u77F3"
+        guid: 0aa5fdc5-e16f-4d05-abf4-29eb539b1e7a
       weight: 100
-    - itemId: 1005
+    - itemName:
+        target: {fileID: 11400000, guid: 453738916714c41ddbb761f80ccf98c5, type: 2}
+        value: "\u9244\u9271\u77F3"
+        guid: ffe618b7-3ffd-46b1-8010-8792f31d1e19
       weight: 60
-  - itemId: 2002
+  - itemName:
+      target: {fileID: 11400000, guid: 453738916714c41ddbb761f80ccf98c5, type: 2}
+      value: "\u9244\u306E\u30C4\u30EB\u30CF\u30B7"
+      guid: e82af497-7793-4158-88aa-1e18b3ab1b38
     breakProbability: 0.75
     acquireItemWeights:
-    - itemId: 1001
+    - itemName:
+        target: {fileID: 11400000, guid: 453738916714c41ddbb761f80ccf98c5, type: 2}
+        value: "\u77F3"
+        guid: 0aa5fdc5-e16f-4d05-abf4-29eb539b1e7a
       weight: 80
-    - itemId: 1005
+    - itemName:
+        target: {fileID: 11400000, guid: 453738916714c41ddbb761f80ccf98c5, type: 2}
+        value: "\u9244\u9271\u77F3"
+        guid: ffe618b7-3ffd-46b1-8010-8792f31d1e19
       weight: 70
-    - itemId: 1006
+    - itemName:
+        target: {fileID: 11400000, guid: 453738916714c41ddbb761f80ccf98c5, type: 2}
+        value: "\u9285\u9271\u77F3"
+        guid: f63940f4-7be7-47b4-b2bf-1d7cc7aea2c3
       weight: 40

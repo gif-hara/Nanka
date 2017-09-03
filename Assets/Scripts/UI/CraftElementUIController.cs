@@ -30,9 +30,9 @@ namespace HK.Nanka
             this.cachedButton = this.GetComponent<Button>();
         }
 
-        public void Initialize(Inventory inventory, ItemSpecs specs, int itemId)
+        public void Initialize(Inventory inventory, ItemSpecs specs, int itemHash)
         {
-            var spec = specs.Get(itemId);
+            var spec = specs.Get(itemHash);
             this.UpdateText(inventory, spec);
 
             UniRxEvent.GlobalBroker.Receive<Crafted>()
@@ -48,8 +48,8 @@ namespace HK.Nanka
                 {
                     if(_spec.Recipe.CanCreate(_inventory))
                     {
-                        Craft.Crafting(_inventory, _specs, _spec.Id);
-                        UniRxEvent.GlobalBroker.Publish(Crafted.Get(_spec.Id));
+                        Craft.Crafting(_inventory, _specs, _spec.Hash);
+                        UniRxEvent.GlobalBroker.Publish(Crafted.Get(_spec.Hash));
                     }
                 })
                 .AddTo(this);
@@ -63,7 +63,7 @@ namespace HK.Nanka
             for(var i=0; i<spec.Recipe.RequireItems.Count; ++i)
             {
                 var r = spec.Recipe.RequireItems[i];
-                requireItemTextBuilder.Append(this.requireItemFormat.Format(r.Item.Name, inventory.GetNumber(r.ItemId), r.Number));
+                requireItemTextBuilder.Append(this.requireItemFormat.Format(r.Item.Name, inventory.GetNumber(r.ItemName), r.Number));
                 if((i + 1) < spec.Recipe.RequireItems.Count)
                 {
                     requireItemTextBuilder.AppendLine();
