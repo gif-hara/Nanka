@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.Assertions;
 
@@ -11,6 +12,13 @@ namespace HK.Nanka
         private List<ItemSpec> specs;
         
         public List<ItemSpec> Specs { get { return this.specs; } }
+
+        public ItemSpec[] CachedToolSpecs { private set; get; }
+
+        public void Initialize()
+        {
+            this.CachedToolSpecs = this.specs.Where(s => s.Type == ItemType.Tool).ToArray();
+        }
 
         public ItemSpec Get(int id)
         {

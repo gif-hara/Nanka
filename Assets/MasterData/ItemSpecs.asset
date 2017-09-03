@@ -49,6 +49,6 @@ MonoBehaviour:
     recipe:
       requireItems:
       - itemId: 1001
-        number: 2
+        number: 5
       - itemId: 2001
-        number: 1
+        number: 3

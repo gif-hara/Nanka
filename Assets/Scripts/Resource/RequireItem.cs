@@ -22,11 +22,19 @@ namespace HK.Nanka
         private int number;
 
         /// <summary>
+        /// 生可能か返す
+        /// </summary>
+        public bool CanCreate(Inventory inventory)
+        {
+            return inventory.Items[itemId] >= this.number;
+        }
+
+        /// <summary>
         /// 所持しているか返す
         /// </summary>
         public bool IsPossession(Inventory inventory)
         {
-            return inventory.Items[itemId] >= this.number;
+            return inventory.Items.ContainsKey(this.itemId);
         }
     }
 }

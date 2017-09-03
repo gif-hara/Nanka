@@ -29,5 +29,7 @@ namespace HK.Nanka
         public string Description { get { return this.description.Get; } }
 
         public ItemType Type { get { return this.type; } }
+
+        
     }
 }

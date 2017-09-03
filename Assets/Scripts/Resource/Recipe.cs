@@ -13,9 +13,20 @@ namespace HK.Nanka
         [SerializeField]
         private List<RequireItem> requireItems;
 
-        public bool CanCreate(Inventory inventory)
+        /// <summary>
+        /// リストに表示可能か返す
+        /// </summary>
+        public bool CanVisibleList(Inventory inventory)
         {
             return this.requireItems.Find(r => !r.IsPossession(inventory)) == null;
+        }
+
+        /// <summary>
+        /// 生成可能か返す
+        /// </summary>
+        public bool CanCreate(Inventory inventory)
+        {
+            return this.requireItems.Find(r => !r.CanCreate(inventory)) == null;
         }
     }
 }
