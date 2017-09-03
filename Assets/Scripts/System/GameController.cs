@@ -20,6 +20,7 @@ namespace HK.Nanka
             Instance = this;
 
             this.Player = new Player();
+            this.ItemSpecs.Initialize();
         }
     }
 }

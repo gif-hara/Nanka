@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 namespace HK.Nanka
@@ -23,6 +24,11 @@ namespace HK.Nanka
 
             var itemSpecs = GameController.Instance.ItemSpecs;
             Debug.Log(string.Format("{0} x {1}", itemSpecs.Get(itemId).Name, this.Items[itemId]));
+        }
+
+        public List<ItemSpec> GetCraftingList(ItemSpecs specs)
+        {
+            return specs.CachedToolSpecs.Where(t => t.Recipe.CanVisibleList(this)).ToList();
         }
     }
 }

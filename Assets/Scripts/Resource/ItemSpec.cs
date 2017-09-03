@@ -30,6 +30,6 @@ namespace HK.Nanka
 
         public ItemType Type { get { return this.type; } }
 
-        
+        public Recipe Recipe { get { return this.recipe; } }
     }
 }

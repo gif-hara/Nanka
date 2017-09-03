@@ -1200,6 +1200,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1319490199}
+  - component: {fileID: 1319490200}
   m_Layer: 5
   m_Name: Craft
   m_TagString: Untagged
@@ -1226,6 +1227,20 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1319490200
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1319490198}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f14bbac99a614a6d97024d00aeb91cf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  elementPrefab: {fileID: 114127363737022808, guid: b2d54c1fe3137438687726cbe029445b,
+    type: 2}
+  scrollViewParent: {fileID: 1758711768}
 --- !u!1 &1339197347
 GameObject:
   m_ObjectHideFlags: 0
