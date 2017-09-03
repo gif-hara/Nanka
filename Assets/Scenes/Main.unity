@@ -421,6 +421,7 @@ GameObject:
   - component: {fileID: 970265879}
   - component: {fileID: 970265878}
   - component: {fileID: 970265877}
+  - component: {fileID: 970265881}
   m_Layer: 5
   m_Name: Craft
   m_TagString: Untagged
@@ -539,6 +540,18 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 970265875}
+--- !u!114 &970265881
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 970265875}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c4ddcc497a974540bebca5a8d6d4586, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: 1
 --- !u!1 &1248812387
 GameObject:
   m_ObjectHideFlags: 0
@@ -869,6 +882,7 @@ GameObject:
   - component: {fileID: 1339197351}
   - component: {fileID: 1339197350}
   - component: {fileID: 1339197349}
+  - component: {fileID: 1339197353}
   m_Layer: 5
   m_Name: Expedition
   m_TagString: Untagged
@@ -987,6 +1001,18 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1339197347}
+--- !u!114 &1339197353
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1339197347}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c4ddcc497a974540bebca5a8d6d4586, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: 0
 --- !u!1 &1415229401
 GameObject:
   m_ObjectHideFlags: 0
