@@ -21,6 +21,10 @@ namespace HK.Nanka
         [SerializeField]
         private int number;
 
+        public int ItemId { get { return this.itemId; } }
+
+        public int Number { get { return this.number; } }
+
         /// <summary>
         /// 生可能か返す
         /// </summary>

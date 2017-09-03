@@ -13,6 +13,8 @@ namespace HK.Nanka
         [SerializeField]
         private List<RequireItem> requireItems;
 
+        public List<RequireItem> RequireItems { get { return this.requireItems; } }
+
         /// <summary>
         /// リストに表示可能か返す
         /// </summary>
