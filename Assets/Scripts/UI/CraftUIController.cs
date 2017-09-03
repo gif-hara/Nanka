@@ -15,11 +15,20 @@ namespace HK.Nanka
 
         void Awake()
         {
-            UniRxEvent.GlobalBroker.Receive<ChangedUI>()
+            var changedUIStream = UniRxEvent.GlobalBroker.Receive<ChangedUI>();
+
+            changedUIStream
                 .Where(c => c.ActiveUIType == GameUIType.Craft)
                 .SubscribeWithState(this, (c, _this) => 
                 {
                     _this.CreateList();
+                })
+                .AddTo(this);
+            changedUIStream
+                .Where(c => c.DeactiveUIType == GameUIType.Craft)
+                .SubscribeWithState(this, (camera, _this) =>
+                {
+                    _this.DestroyList();
                 })
                 .AddTo(this);
         }
@@ -33,6 +42,14 @@ namespace HK.Nanka
             {
                 var element = Instantiate(this.elementPrefab, this.scrollViewParent, false);
                 element.Initialize(inventory, itemSpecs, i.Id);
+            }
+        }
+
+        private void DestroyList()
+        {
+            for(int i=0, imax=this.scrollViewParent.childCount; i<imax; ++i)
+            {
+                Destroy(this.scrollViewParent.GetChild(0).gameObject);
             }
         }
     }

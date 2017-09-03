@@ -28,11 +28,12 @@ namespace HK.Nanka
         public void Change(GameUIType type)
         {
             var oldUI = this.GetUI(this.currentUIType);
+            var oldType = this.currentUIType;
             var newUI = this.GetUI(type);
             oldUI.SetActive(false);
             newUI.SetActive(true);
             this.currentUIType = type;
-            UniRxEvent.GlobalBroker.Publish(ChangedUI.Get(type, newUI));
+            UniRxEvent.GlobalBroker.Publish(ChangedUI.Get(type, newUI, oldType, oldUI));
         }
 
         public GameObject GetUI(GameUIType type)
