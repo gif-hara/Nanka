@@ -9,6 +9,6 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f21c9b9bafae549cc90f9855a1813ffb, type: 3}
-  m_Name: MiningTask
+  m_Name: IronOreMiningTask
   m_EditorClassIdentifier: 
-  collect: {fileID: 11400000, guid: 1c89cd9a996644622a200e7a27b4e234, type: 2}
+  collect: {fileID: 11400000, guid: febef4c95c37a480d832ba4b558ce563, type: 2}

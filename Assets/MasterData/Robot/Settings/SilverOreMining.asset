@@ -9,8 +9,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 971bd21d0f2984bff9b9b54fe5b08354, type: 3}
-  m_Name: Mining
+  m_Name: SilverOreMining
   m_EditorClassIdentifier: 
   maxChargeTime: 1
   subChargeTime: 0.02
-  task: {fileID: 11400000, guid: 2a2c3202e528142969eb020a0c317719, type: 2}
+  task: {fileID: 11400000, guid: 33a0f4457e39649ddb391587211c89d9, type: 2}

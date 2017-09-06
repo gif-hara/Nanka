@@ -7,10 +7,17 @@ namespace HK.Nanka
 {
     public sealed class RobotController : MonoBehaviour
     {
+        [SerializeField]
+        private List<RobotSettings> settings = new List<RobotSettings>();
+        
         private readonly List<Robot> robots = new List<Robot>();
 
         void Awake()
         {
+            this.settings.ForEach(s =>
+            {
+                this.robots.Add(new Robot(s));
+            });
             this.UpdateAsObservable()
                 .SubscribeWithState(this, (_, _this) =>
                 {
