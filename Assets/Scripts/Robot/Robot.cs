@@ -4,24 +4,24 @@ namespace HK.Nanka
 {
     public class Robot
     {
-        public const float MaxChargeTime = 1.0f;
-
         private float chargeTimer = 0.0f;
 
-        private Task task;
+        private int level = 0;
 
-        public Robot(Task task)
+        private RobotSettings settings;
+
+        public Robot(RobotSettings settings)
         {
-            this.task = task;
+            this.settings = settings;
         }
 
         public void Update(float t)
         {
             this.chargeTimer += t;
-            if(this.chargeTimer >= MaxChargeTime)
+            if(this.chargeTimer >= this.settings.GetCurrentChargeTime(this.level))
             {
-                this.chargeTimer -= MaxChargeTime;
-                this.task.Do();
+                this.chargeTimer = 0.0f;
+                this.settings.Task.Do();
             }
         }
     }

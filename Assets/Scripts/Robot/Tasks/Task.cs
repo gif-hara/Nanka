@@ -2,7 +2,7 @@
 
 namespace HK.Nanka
 {
-    public abstract class Task
+    public abstract class Task : ScriptableObject
     {
         public abstract void Do();
     }
