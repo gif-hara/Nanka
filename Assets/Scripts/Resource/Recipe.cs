@@ -11,7 +11,7 @@ namespace HK.Nanka
     public sealed class Recipe
     {
         [SerializeField]
-        private List<RequireItem> requireItems;
+        private List<RequireItem> requireItems = new List<RequireItem>();
 
         public List<RequireItem> RequireItems { get { return this.requireItems; } }
 

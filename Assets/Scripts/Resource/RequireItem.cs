@@ -33,6 +33,10 @@ namespace HK.Nanka
         /// </summary>
         public bool CanCreate(Inventory inventory)
         {
+            if (!this.IsPossession(inventory))
+            {
+                return false;
+            }
             return inventory.Items[this.ItemName] >= this.number;
         }
 
