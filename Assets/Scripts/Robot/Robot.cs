@@ -17,6 +17,12 @@ namespace HK.Nanka.RobotSystems
 
         public void Update(float t)
         {
+            var condition = this.settings.Condition;
+            if (condition != null && !condition.Can)
+            {
+                return;
+            }
+            
             this.chargeTimer += t;
             if(this.chargeTimer >= this.settings.GetCurrentChargeTime(this.level))
             {

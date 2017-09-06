@@ -14,3 +14,4 @@ MonoBehaviour:
   maxChargeTime: 0.2
   subChargeTime: 0.02
   task: {fileID: 11400000, guid: b7380daa1a6124170b5558a3b33c1177, type: 2}
+  condition: {fileID: 0}
