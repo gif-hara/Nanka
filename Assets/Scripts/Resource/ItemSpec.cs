@@ -29,6 +29,11 @@ namespace HK.Nanka
             this.hash = this.name.Get.GetHashCode();
         }
 
+        public bool CanCreate(Inventory inventory)
+        {
+            return this.RequireItem.CanCreate(inventory) && this.Recipe.CanCreate(inventory);
+        }
+
         public int Hash { get { return this.hash; } }
 
         public string Name { get { return this.name.Get; } }

@@ -55,7 +55,7 @@ namespace HK.Nanka
                 .TakeUntilDisable(this)
                 .SubscribeWithState3(inventory, specs, spec, (_, _inventory, _specs, _spec) =>
                 {
-                    if(_spec.Recipe.CanCreate(_inventory))
+                    if(_spec.CanCreate(_inventory))
                     {
                         Craft.Crafting(_inventory, _specs, _spec.Hash);
                         UniRxEvent.GlobalBroker.Publish(Crafted.Get(_spec.Hash));
