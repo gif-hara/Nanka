@@ -3,7 +3,7 @@ using UniRx;
 using UniRx.Triggers;
 using UnityEngine;
 
-namespace HK.Nanka
+namespace HK.Nanka.RobotSystems
 {
     public sealed class RobotController : MonoBehaviour
     {

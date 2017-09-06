@@ -1,6 +1,7 @@
-﻿using UnityEngine;
+﻿using HK.Nanka.RobotSystems.Tasks;
+using UnityEngine;
 
-namespace HK.Nanka
+namespace HK.Nanka.RobotSystems
 {
     [CreateAssetMenu(menuName = "MasterData/Robot/Settings")]
     public sealed class RobotSettings : ScriptableObject

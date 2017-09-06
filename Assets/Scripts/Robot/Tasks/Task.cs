@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace HK.Nanka
+namespace HK.Nanka.RobotSystems.Tasks
 {
     public abstract class Task : ScriptableObject
     {

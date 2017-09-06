@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace HK.Nanka
+namespace HK.Nanka.RobotSystems.Tasks
 {
     /// <summary>
     /// 採集を行うタスク

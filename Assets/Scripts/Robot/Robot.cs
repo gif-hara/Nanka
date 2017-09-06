@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace HK.Nanka
+namespace HK.Nanka.RobotSystems
 {
     public class Robot
     {
