@@ -25,7 +25,12 @@ namespace HK.Nanka
             this.Items[itemHash] += number;
 
             var itemSpecs = GameController.Instance.ItemSpecs;
-            Debug.Log(string.Format("{0} x {1}", itemSpecs.Get(itemHash).Name, this.Items[itemHash]));
+            var item = itemSpecs.Get(itemHash);
+            if (item.AddedInventoryTask != null)
+            {
+                item.AddedInventoryTask.Do();                
+            }
+            Debug.Log(string.Format("{0} x {1}", item.Name, this.Items[itemHash]));
         }
 
         public void Remove(int itemHash, int number)

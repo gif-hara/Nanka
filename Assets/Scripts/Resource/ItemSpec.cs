@@ -1,5 +1,6 @@
 ﻿using System;
 using HK.Framework.Text;
+using HK.Nanka.Tasks;
 using UnityEngine;
 
 namespace HK.Nanka
@@ -36,6 +37,12 @@ namespace HK.Nanka
         [SerializeField]
         private Recipe recipe;
 
+        /// <summary>
+        /// インベントリに追加される際の処理
+        /// </summary>
+        [SerializeField]
+        private Task addedInventoryTask;
+
         public void Initialize()
         {
             this.hash = this.name.Get.GetHashCode();
@@ -57,5 +64,7 @@ namespace HK.Nanka
         public Recipe RequireItem { get { return this.requireItem; } }
 
         public Recipe Recipe { get { return this.recipe; } }
+
+        public Task AddedInventoryTask { get { return this.addedInventoryTask; } }
     }
 }

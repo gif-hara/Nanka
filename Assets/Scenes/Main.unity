@@ -249,6 +249,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemSpecs: {fileID: 11400000, guid: bca7895dc2828434691a53768be8382c, type: 2}
+  robotController: {fileID: 306998958}
 --- !u!4 &306998957
 Transform:
   m_ObjectHideFlags: 0
@@ -273,9 +274,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d3d924bc3b7084e7687728150c4ac23a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  settings:
-  - {fileID: 11400000, guid: cd5d9df5647fa46a79a2d241ddceef71, type: 2}
-  - {fileID: 11400000, guid: 72878dc620a4d49e7960bb83c29e84ab, type: 2}
 --- !u!1 &416799525
 GameObject:
   m_ObjectHideFlags: 0

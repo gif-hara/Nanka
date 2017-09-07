@@ -11,8 +11,14 @@ namespace HK.Nanka.RobotSystems
         private RobotSettings settings;
 
         public Robot(RobotSettings settings)
+            :this(settings, 0)
+        {
+        }
+
+        public Robot(RobotSettings settings, int level)
         {
             this.settings = settings;
+            this.level = level;
         }
 
         public void Update(float t)
@@ -29,6 +35,16 @@ namespace HK.Nanka.RobotSystems
                 this.chargeTimer = 0.0f;
                 this.settings.Task.Do();
             }
+        }
+
+        public void LevelUp()
+        {
+            this.level++;
+        }
+
+        public bool IsMatch(RobotSettings settings)
+        {
+            return this.settings == settings;
         }
     }
 }

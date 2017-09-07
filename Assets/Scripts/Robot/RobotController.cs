@@ -18,9 +18,19 @@ namespace HK.Nanka.RobotSystems
                 });
         }
 
-        public void Add(Robot robot)
+        public void Add(RobotSettings settings)
         {
-            this.robots.Add(robot);
+            var robot = this.robots.Find(r => r.IsMatch(settings));
+            
+            // すでに存在する場合はレベルアップ
+            if (robot != null)
+            {
+                robot.LevelUp();
+            }
+            else
+            {
+                this.robots.Add(new Robot(settings));
+            }
         }
     }
 }
