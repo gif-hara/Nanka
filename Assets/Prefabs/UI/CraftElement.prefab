@@ -198,6 +198,8 @@ MonoBehaviour:
     target: {fileID: 11400000, guid: 42add51362d84428bb10513a4efec61a, type: 2}
     value: "\u30FB{0} {1}/{2}"
     guid: 43fff543-1d2c-41da-865a-f44ed4415e86
+  delayCraftInterval: 0.5
+  craftInterval: 0.05
 --- !u!114 &114141398801076716
 MonoBehaviour:
   m_ObjectHideFlags: 1

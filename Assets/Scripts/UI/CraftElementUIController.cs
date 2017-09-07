@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UniRx;
@@ -6,6 +7,7 @@ using HK.Framework.Text;
 using System.Text;
 using HK.Framework.EventSystems;
 using HK.Nanka.Events;
+using UniRx.Triggers;
 
 namespace HK.Nanka
 {
@@ -33,6 +35,12 @@ namespace HK.Nanka
         [SerializeField]
         private StringAsset.Finder requireItemFormat;
 
+        [SerializeField]
+        private float delayCraftInterval;
+
+        [SerializeField]
+        private float craftInterval;
+
         private Button cachedButton;
 
         public GameObject CachedGameObject { private set; get; }
@@ -52,15 +60,19 @@ namespace HK.Nanka
 
             this.cachedButton.OnClickAsObservable()
                 .Where(_ => this.isActiveAndEnabled)
-                .SubscribeWithState3(this, inventory, specs, (_, _this, _inventory, _specs) =>
+                .SubscribeWithState(this, (_, _this) =>
                 {
-                    if(_this.ItemSpec.CanCreate(_inventory))
-                    {
-                        Craft.Crafting(_inventory, _specs, _this.ItemSpec.Hash);
-                        UniRxEvent.GlobalBroker.Publish(Crafted.Get(_this.ItemSpec.Hash));
-                    }
+                    _this.Crafting();
                 })
                 .AddTo(this);
+            this.cachedButton.OnPointerDownAsObservable()
+                .SelectMany(_ => Observable.Timer(TimeSpan.FromSeconds(this.delayCraftInterval)))
+                .TakeUntil(this.cachedButton.OnPointerUpAsObservable())
+                .RepeatUntilDestroy(this.CachedGameObject)
+                .SubscribeWithState(this, (_, _this) =>
+                {
+                    _this.CraftingInterval();
+                });
             UniRxEvent.GlobalBroker.Receive<AddedItem>()
                 .Where(_ => this.isActiveAndEnabled)
                 .SubscribeWithState(this, (a, _this) =>
@@ -73,11 +85,6 @@ namespace HK.Nanka
         public void SetActive(List<ItemSpec> visibleList)
         {
             var isActive = visibleList.Find(v => v == this.ItemSpec) != null;
-            if (this.CachedGameObject.activeInHierarchy == isActive)
-            {
-                return;
-            }
-            
             this.CachedGameObject.SetActive(isActive);
             if (isActive)
             {
@@ -107,6 +114,29 @@ namespace HK.Nanka
                 }
             }
             text.text = builder.ToString();
+        }
+
+        private void CraftingInterval()
+        {
+            Observable.Interval(TimeSpan.FromSeconds(this.craftInterval))
+                .TakeUntil(this.cachedButton.OnPointerUpAsObservable())
+                .SubscribeWithState(this, (_, _this) =>
+                {
+                    _this.Crafting();
+                })
+                .AddTo(this);
+        }
+
+        private void Crafting()
+        {
+            var inventory = GameController.Instance.Player.Inventory;
+            if (!this.ItemSpec.CanCreate(inventory))
+            {
+                return;
+            }
+            var itemSpecs = GameController.Instance.ItemSpecs;
+            Craft.Crafting(inventory, itemSpecs, this.ItemSpec.Hash);
+            UniRxEvent.GlobalBroker.Publish(Crafted.Get(this.ItemSpec.Hash));
         }
     }
 }
