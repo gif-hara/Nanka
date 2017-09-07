@@ -18,9 +18,21 @@ namespace HK.Nanka
         [SerializeField]
         private ItemType type;
 
+        /// <summary>
+        /// 作成するのに必要なアイテム
+        /// </summary>
+        /// <remarks>
+        /// 作業台などが指定され、このアイテムは消費されません
+        /// </remarks>
         [SerializeField]
         private Recipe requireItem;
 
+        /// <summary>
+        /// 作成するのに必要なアイテム
+        /// </summary>
+        /// <remarks>
+        /// 中間素材などが指定され、このアイテムは消費されます
+        /// </remarks>
         [SerializeField]
         private Recipe recipe;
 
