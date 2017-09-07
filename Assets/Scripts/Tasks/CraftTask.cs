@@ -1,7 +1,7 @@
 ﻿using HK.Framework.Text;
 using UnityEngine;
 
-namespace HK.Nanka.RobotSystems.Tasks
+namespace HK.Nanka.Tasks
 {
     [CreateAssetMenu(menuName = "MasterData/Robot/Task/Craft")]
     public sealed class CraftTask : Task

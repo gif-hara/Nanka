@@ -1,5 +1,5 @@
 ﻿using HK.Nanka.RobotSystems.Conditions;
-using HK.Nanka.RobotSystems.Tasks;
+using HK.Nanka.Tasks;
 using UnityEngine;
 
 namespace HK.Nanka.RobotSystems
