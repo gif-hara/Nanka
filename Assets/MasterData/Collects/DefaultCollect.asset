@@ -41,6 +41,17 @@ MonoBehaviour:
   collectableItems:
   - itemName:
       target: {fileID: 11400000, guid: 453738916714c41ddbb761f80ccf98c5, type: 2}
+      value: "\u77F3\u306E\u30AA\u30CE"
+      guid: b9669b5c-84d9-4ad3-963e-db70bbbd3d21
+    breakProbability: 0.3
+    acquireItemWeights:
+    - itemName:
+        target: {fileID: 11400000, guid: 453738916714c41ddbb761f80ccf98c5, type: 2}
+        value: "\u6728\u6750"
+        guid: 31270558-457b-4279-a007-1b0bf0bf873d
+      weight: 100
+  - itemName:
+      target: {fileID: 11400000, guid: 453738916714c41ddbb761f80ccf98c5, type: 2}
       value: "\u77F3\u306E\u30C4\u30EB\u30CF\u30B7"
       guid: 23554b7c-7cc7-46c2-8a36-4caa176a5906
     breakProbability: 0.3
@@ -49,12 +60,12 @@ MonoBehaviour:
         target: {fileID: 11400000, guid: 453738916714c41ddbb761f80ccf98c5, type: 2}
         value: "\u77F3"
         guid: 0aa5fdc5-e16f-4d05-abf4-29eb539b1e7a
-      weight: 100
+      weight: 50
     - itemName:
         target: {fileID: 11400000, guid: 453738916714c41ddbb761f80ccf98c5, type: 2}
         value: "\u9244\u9271\u77F3"
         guid: ffe618b7-3ffd-46b1-8010-8792f31d1e19
-      weight: 60
+      weight: 100
   - itemName:
       target: {fileID: 11400000, guid: 453738916714c41ddbb761f80ccf98c5, type: 2}
       value: "\u9244\u306E\u30C4\u30EB\u30CF\u30B7"
@@ -65,7 +76,7 @@ MonoBehaviour:
         target: {fileID: 11400000, guid: 453738916714c41ddbb761f80ccf98c5, type: 2}
         value: "\u77F3"
         guid: 0aa5fdc5-e16f-4d05-abf4-29eb539b1e7a
-      weight: 80
+      weight: 40
     - itemName:
         target: {fileID: 11400000, guid: 453738916714c41ddbb761f80ccf98c5, type: 2}
         value: "\u9244\u9271\u77F3"
@@ -75,7 +86,7 @@ MonoBehaviour:
         target: {fileID: 11400000, guid: 453738916714c41ddbb761f80ccf98c5, type: 2}
         value: "\u9285\u9271\u77F3"
         guid: f63940f4-7be7-47b4-b2bf-1d7cc7aea2c3
-      weight: 40
+      weight: 70
   - itemName:
       target: {fileID: 11400000, guid: 453738916714c41ddbb761f80ccf98c5, type: 2}
       value: "\u9285\u306E\u30C4\u30EB\u30CF\u30B7"
@@ -86,7 +97,7 @@ MonoBehaviour:
         target: {fileID: 11400000, guid: 453738916714c41ddbb761f80ccf98c5, type: 2}
         value: "\u9244\u9271\u77F3"
         guid: ffe618b7-3ffd-46b1-8010-8792f31d1e19
-      weight: 80
+      weight: 40
     - itemName:
         target: {fileID: 11400000, guid: 453738916714c41ddbb761f80ccf98c5, type: 2}
         value: "\u9285\u9271\u77F3"
@@ -96,7 +107,7 @@ MonoBehaviour:
         target: {fileID: 11400000, guid: 453738916714c41ddbb761f80ccf98c5, type: 2}
         value: "\u9280\u9271\u77F3"
         guid: db78622c-77fa-42a8-a981-fdee158b3989
-      weight: 40
+      weight: 70
   - itemName:
       target: {fileID: 11400000, guid: 453738916714c41ddbb761f80ccf98c5, type: 2}
       value: "\u9280\u306E\u30C4\u30EB\u30CF\u30B7"
@@ -107,7 +118,7 @@ MonoBehaviour:
         target: {fileID: 11400000, guid: 453738916714c41ddbb761f80ccf98c5, type: 2}
         value: "\u9285\u9271\u77F3"
         guid: f63940f4-7be7-47b4-b2bf-1d7cc7aea2c3
-      weight: 80
+      weight: 40
     - itemName:
         target: {fileID: 11400000, guid: 453738916714c41ddbb761f80ccf98c5, type: 2}
         value: "\u9280\u9271\u77F3"
@@ -117,7 +128,7 @@ MonoBehaviour:
         target: {fileID: 11400000, guid: 453738916714c41ddbb761f80ccf98c5, type: 2}
         value: "\u91D1\u9271\u77F3"
         guid: 2d1ca0fd-b35b-474f-836a-bee5a27b84b9
-      weight: 40
+      weight: 70
   - itemName:
       target: {fileID: 11400000, guid: 453738916714c41ddbb761f80ccf98c5, type: 2}
       value: "\u91D1\u306E\u30C4\u30EB\u30CF\u30B7"
@@ -128,7 +139,7 @@ MonoBehaviour:
         target: {fileID: 11400000, guid: 453738916714c41ddbb761f80ccf98c5, type: 2}
         value: "\u9280\u9271\u77F3"
         guid: db78622c-77fa-42a8-a981-fdee158b3989
-      weight: 80
+      weight: 40
     - itemName:
         target: {fileID: 11400000, guid: 453738916714c41ddbb761f80ccf98c5, type: 2}
         value: "\u91D1\u9271\u77F3"
@@ -138,7 +149,7 @@ MonoBehaviour:
         target: {fileID: 11400000, guid: 453738916714c41ddbb761f80ccf98c5, type: 2}
         value: "\u30DF\u30B9\u30EA\u30EB\u9271\u77F3"
         guid: 438387e0-8056-454a-bfca-ddca146e8468
-      weight: 40
+      weight: 70
   - itemName:
       target: {fileID: 11400000, guid: 453738916714c41ddbb761f80ccf98c5, type: 2}
       value: "\u30DF\u30B9\u30EA\u30EB\u306E\u30C4\u30EB\u30CF\u30B7"
@@ -149,7 +160,7 @@ MonoBehaviour:
         target: {fileID: 11400000, guid: 453738916714c41ddbb761f80ccf98c5, type: 2}
         value: "\u91D1\u9271\u77F3"
         guid: 2d1ca0fd-b35b-474f-836a-bee5a27b84b9
-      weight: 80
+      weight: 40
     - itemName:
         target: {fileID: 11400000, guid: 453738916714c41ddbb761f80ccf98c5, type: 2}
         value: "\u30DF\u30B9\u30EA\u30EB\u9271\u77F3"
@@ -159,7 +170,7 @@ MonoBehaviour:
         target: {fileID: 11400000, guid: 453738916714c41ddbb761f80ccf98c5, type: 2}
         value: "\u30C1\u30BF\u30F3\u9271\u77F3"
         guid: 06e4185f-0e4d-4759-b3a0-f44aa3ff3aee
-      weight: 40
+      weight: 70
   - itemName:
       target: {fileID: 11400000, guid: 453738916714c41ddbb761f80ccf98c5, type: 2}
       value: "\u30C1\u30BF\u30F3\u306E\u30C4\u30EB\u30CF\u30B7"
@@ -170,7 +181,7 @@ MonoBehaviour:
         target: {fileID: 11400000, guid: 453738916714c41ddbb761f80ccf98c5, type: 2}
         value: "\u30DF\u30B9\u30EA\u30EB\u9271\u77F3"
         guid: 438387e0-8056-454a-bfca-ddca146e8468
-      weight: 80
+      weight: 40
     - itemName:
         target: {fileID: 11400000, guid: 453738916714c41ddbb761f80ccf98c5, type: 2}
         value: "\u30C1\u30BF\u30F3\u9271\u77F3"
@@ -180,4 +191,4 @@ MonoBehaviour:
         target: {fileID: 11400000, guid: 453738916714c41ddbb761f80ccf98c5, type: 2}
         value: "\u30C0\u30A4\u30E4\u30E2\u30F3\u30C9"
         guid: 0d9175a2-02d9-4add-aa75-4a4d268cb83d
-      weight: 40
+      weight: 70

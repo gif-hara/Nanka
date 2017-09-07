@@ -11,6 +11,9 @@ namespace HK.Nanka
         private int hash;
 
         [SerializeField]
+        private Sprite icon;
+
+        [SerializeField]
         private StringAsset.Finder name;
 
         [SerializeField]
@@ -54,6 +57,8 @@ namespace HK.Nanka
         }
 
         public int Hash { get { return this.hash; } }
+
+        public Sprite Icon { get { return this.icon; } }
 
         public string Name { get { return this.name.Get; } }
 

@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Name: ItemSpecs
   m_EditorClassIdentifier: 
   specs:
-  - name:
+  - icon: {fileID: 21300000, guid: b49aafb1605d645b9bb0c600c6aa080b, type: 3}
+    name:
       target: {fileID: 11400000, guid: 453738916714c41ddbb761f80ccf98c5, type: 2}
       value: "\u77F3"
       guid: 0aa5fdc5-e16f-4d05-abf4-29eb539b1e7a
@@ -26,7 +27,8 @@ MonoBehaviour:
     recipe:
       requireItems: []
     addedInventoryTask: {fileID: 0}
-  - name:
+  - icon: {fileID: 21300000, guid: fba13427e2a7f41afad76974279fcdf8, type: 3}
+    name:
       target: {fileID: 11400000, guid: 453738916714c41ddbb761f80ccf98c5, type: 2}
       value: "\u6728\u6750"
       guid: 31270558-457b-4279-a007-1b0bf0bf873d
@@ -40,7 +42,8 @@ MonoBehaviour:
     recipe:
       requireItems: []
     addedInventoryTask: {fileID: 0}
-  - name:
+  - icon: {fileID: 21300000, guid: b49aafb1605d645b9bb0c600c6aa080b, type: 3}
+    name:
       target: {fileID: 11400000, guid: 453738916714c41ddbb761f80ccf98c5, type: 2}
       value: "\u77F3\u70AD"
       guid: 3e32e98a-734a-4076-83dd-0d99dc2688d3
@@ -54,7 +57,8 @@ MonoBehaviour:
     recipe:
       requireItems: []
     addedInventoryTask: {fileID: 0}
-  - name:
+  - icon: {fileID: 21300000, guid: 048d8d399260f42168ee82e0225fea77, type: 3}
+    name:
       target: {fileID: 11400000, guid: 453738916714c41ddbb761f80ccf98c5, type: 2}
       value: "\u7802"
       guid: c0856568-7941-46f4-adcc-72a728448597
@@ -68,7 +72,8 @@ MonoBehaviour:
     recipe:
       requireItems: []
     addedInventoryTask: {fileID: 0}
-  - name:
+  - icon: {fileID: 21300000, guid: 96a8262397df5489cb737bcc840b9c5b, type: 3}
+    name:
       target: {fileID: 11400000, guid: 453738916714c41ddbb761f80ccf98c5, type: 2}
       value: "\u9244\u9271\u77F3"
       guid: ffe618b7-3ffd-46b1-8010-8792f31d1e19
@@ -82,7 +87,8 @@ MonoBehaviour:
     recipe:
       requireItems: []
     addedInventoryTask: {fileID: 0}
-  - name:
+  - icon: {fileID: 21300000, guid: 96a8262397df5489cb737bcc840b9c5b, type: 3}
+    name:
       target: {fileID: 11400000, guid: 453738916714c41ddbb761f80ccf98c5, type: 2}
       value: "\u9285\u9271\u77F3"
       guid: f63940f4-7be7-47b4-b2bf-1d7cc7aea2c3
@@ -96,7 +102,8 @@ MonoBehaviour:
     recipe:
       requireItems: []
     addedInventoryTask: {fileID: 0}
-  - name:
+  - icon: {fileID: 21300000, guid: 96a8262397df5489cb737bcc840b9c5b, type: 3}
+    name:
       target: {fileID: 11400000, guid: 453738916714c41ddbb761f80ccf98c5, type: 2}
       value: "\u9280\u9271\u77F3"
       guid: db78622c-77fa-42a8-a981-fdee158b3989
@@ -110,7 +117,8 @@ MonoBehaviour:
     recipe:
       requireItems: []
     addedInventoryTask: {fileID: 0}
-  - name:
+  - icon: {fileID: 21300000, guid: 96a8262397df5489cb737bcc840b9c5b, type: 3}
+    name:
       target: {fileID: 11400000, guid: 453738916714c41ddbb761f80ccf98c5, type: 2}
       value: "\u91D1\u9271\u77F3"
       guid: 2d1ca0fd-b35b-474f-836a-bee5a27b84b9
@@ -124,7 +132,8 @@ MonoBehaviour:
     recipe:
       requireItems: []
     addedInventoryTask: {fileID: 0}
-  - name:
+  - icon: {fileID: 21300000, guid: 96a8262397df5489cb737bcc840b9c5b, type: 3}
+    name:
       target: {fileID: 11400000, guid: 453738916714c41ddbb761f80ccf98c5, type: 2}
       value: "\u30DF\u30B9\u30EA\u30EB\u9271\u77F3"
       guid: 438387e0-8056-454a-bfca-ddca146e8468
@@ -138,7 +147,8 @@ MonoBehaviour:
     recipe:
       requireItems: []
     addedInventoryTask: {fileID: 0}
-  - name:
+  - icon: {fileID: 21300000, guid: 96a8262397df5489cb737bcc840b9c5b, type: 3}
+    name:
       target: {fileID: 11400000, guid: 453738916714c41ddbb761f80ccf98c5, type: 2}
       value: "\u30C1\u30BF\u30F3\u9271\u77F3"
       guid: 06e4185f-0e4d-4759-b3a0-f44aa3ff3aee
@@ -152,7 +162,8 @@ MonoBehaviour:
     recipe:
       requireItems: []
     addedInventoryTask: {fileID: 0}
-  - name:
+  - icon: {fileID: 21300000, guid: b3ac2015fed5c40b9af483511abcd09e, type: 3}
+    name:
       target: {fileID: 11400000, guid: 453738916714c41ddbb761f80ccf98c5, type: 2}
       value: "\u30C0\u30A4\u30E4\u30E2\u30F3\u30C9"
       guid: 0d9175a2-02d9-4add-aa75-4a4d268cb83d
@@ -166,7 +177,8 @@ MonoBehaviour:
     recipe:
       requireItems: []
     addedInventoryTask: {fileID: 0}
-  - name:
+  - icon: {fileID: 21300000, guid: 72032796ac3bc43e9a0c2cf68e151ee7, type: 3}
+    name:
       target: {fileID: 11400000, guid: 453738916714c41ddbb761f80ccf98c5, type: 2}
       value: "\u30AC\u30E9\u30B9"
       guid: 6d239072-fb59-4c6e-b36f-d0a81d4033fa
@@ -185,7 +197,8 @@ MonoBehaviour:
           guid: c0856568-7941-46f4-adcc-72a728448597
         number: 5
     addedInventoryTask: {fileID: 0}
-  - name:
+  - icon: {fileID: 21300000, guid: 68aeeb922cbc24501ba6ea2acc55915a, type: 3}
+    name:
       target: {fileID: 11400000, guid: 453738916714c41ddbb761f80ccf98c5, type: 2}
       value: "\u9285\u7DDA"
       guid: 2ac6c98c-c195-4491-b4ce-878893ab8443
@@ -209,7 +222,8 @@ MonoBehaviour:
           guid: d16df955-79e9-4935-9bc6-b3a5b11ae042
         number: 1
     addedInventoryTask: {fileID: 0}
-  - name:
+  - icon: {fileID: 21300000, guid: 68aeeb922cbc24501ba6ea2acc55915a, type: 3}
+    name:
       target: {fileID: 11400000, guid: 453738916714c41ddbb761f80ccf98c5, type: 2}
       value: "\u9280\u9244\u96FB\u7DDA"
       guid: 05a4e8d6-7aac-4ab3-b382-bea7b939567a
@@ -238,7 +252,8 @@ MonoBehaviour:
           guid: 8e73ee7d-0427-4f89-8e73-45c3106d2f3b
         number: 5
     addedInventoryTask: {fileID: 0}
-  - name:
+  - icon: {fileID: 21300000, guid: 68aeeb922cbc24501ba6ea2acc55915a, type: 3}
+    name:
       target: {fileID: 11400000, guid: 453738916714c41ddbb761f80ccf98c5, type: 2}
       value: "\u91D1\u9244\u96FB\u7DDA"
       guid: 2a89cf31-95fc-4711-9311-d25eb3bedab0
@@ -262,7 +277,8 @@ MonoBehaviour:
           guid: 8e73ee7d-0427-4f89-8e73-45c3106d2f3b
         number: 7
     addedInventoryTask: {fileID: 0}
-  - name:
+  - icon: {fileID: 21300000, guid: 7edf8a070a8ce45e8a7c5540ca817084, type: 3}
+    name:
       target: {fileID: 11400000, guid: 453738916714c41ddbb761f80ccf98c5, type: 2}
       value: "\u96FB\u5B50\u57FA\u677F"
       guid: d990a153-075e-4764-87cc-1e63f0f089c7
@@ -291,7 +307,8 @@ MonoBehaviour:
           guid: 2ac6c98c-c195-4491-b4ce-878893ab8443
         number: 6
     addedInventoryTask: {fileID: 0}
-  - name:
+  - icon: {fileID: 21300000, guid: 7edf8a070a8ce45e8a7c5540ca817084, type: 3}
+    name:
       target: {fileID: 11400000, guid: 453738916714c41ddbb761f80ccf98c5, type: 2}
       value: "\u9AD8\u5EA6\u96FB\u5B50\u57FA\u677F"
       guid: 849efe77-ee7a-4c0a-81ca-3a39a7fcdf52
@@ -325,7 +342,8 @@ MonoBehaviour:
           guid: fe5014aa-9196-4874-b7ea-6bceb74743ca
         number: 4
     addedInventoryTask: {fileID: 0}
-  - name:
+  - icon: {fileID: 21300000, guid: fb1e4032c26c841e68491be47ff769f4, type: 3}
+    name:
       target: {fileID: 11400000, guid: 453738916714c41ddbb761f80ccf98c5, type: 2}
       value: "\u9244\u306E\u30A4\u30F3\u30B4\u30C3\u30C8"
       guid: bc8f898c-83df-4fe6-ae7d-4dda1c1a01ed
@@ -354,7 +372,8 @@ MonoBehaviour:
           guid: ffe618b7-3ffd-46b1-8010-8792f31d1e19
         number: 5
     addedInventoryTask: {fileID: 0}
-  - name:
+  - icon: {fileID: 21300000, guid: fb1e4032c26c841e68491be47ff769f4, type: 3}
+    name:
       target: {fileID: 11400000, guid: 453738916714c41ddbb761f80ccf98c5, type: 2}
       value: "\u9285\u306E\u30A4\u30F3\u30B4\u30C3\u30C8"
       guid: d16df955-79e9-4935-9bc6-b3a5b11ae042
@@ -383,7 +402,8 @@ MonoBehaviour:
           guid: f63940f4-7be7-47b4-b2bf-1d7cc7aea2c3
         number: 5
     addedInventoryTask: {fileID: 0}
-  - name:
+  - icon: {fileID: 21300000, guid: fb1e4032c26c841e68491be47ff769f4, type: 3}
+    name:
       target: {fileID: 11400000, guid: 453738916714c41ddbb761f80ccf98c5, type: 2}
       value: "\u92FC\u9244\u306E\u30A4\u30F3\u30B4\u30C3\u30C8"
       guid: fe5014aa-9196-4874-b7ea-6bceb74743ca
@@ -412,7 +432,8 @@ MonoBehaviour:
           guid: bc8f898c-83df-4fe6-ae7d-4dda1c1a01ed
         number: 5
     addedInventoryTask: {fileID: 0}
-  - name:
+  - icon: {fileID: 21300000, guid: fb1e4032c26c841e68491be47ff769f4, type: 3}
+    name:
       target: {fileID: 11400000, guid: 453738916714c41ddbb761f80ccf98c5, type: 2}
       value: "\u9280\u306E\u30A4\u30F3\u30B4\u30C3\u30C8"
       guid: 6cef1e94-cc28-42f9-90b5-3968adb7ede5
@@ -441,7 +462,8 @@ MonoBehaviour:
           guid: db78622c-77fa-42a8-a981-fdee158b3989
         number: 6
     addedInventoryTask: {fileID: 0}
-  - name:
+  - icon: {fileID: 21300000, guid: fb1e4032c26c841e68491be47ff769f4, type: 3}
+    name:
       target: {fileID: 11400000, guid: 453738916714c41ddbb761f80ccf98c5, type: 2}
       value: "\u91D1\u306E\u30A4\u30F3\u30B4\u30C3\u30C8"
       guid: 8e73ee7d-0427-4f89-8e73-45c3106d2f3b
@@ -470,7 +492,8 @@ MonoBehaviour:
           guid: 2d1ca0fd-b35b-474f-836a-bee5a27b84b9
         number: 7
     addedInventoryTask: {fileID: 0}
-  - name:
+  - icon: {fileID: 21300000, guid: fb1e4032c26c841e68491be47ff769f4, type: 3}
+    name:
       target: {fileID: 11400000, guid: 453738916714c41ddbb761f80ccf98c5, type: 2}
       value: "\u30DF\u30B9\u30EA\u30EB\u30A4\u30F3\u30B4\u30C3\u30C8"
       guid: bcfe859d-f2cd-477c-b197-7f504c1e4a8c
@@ -504,7 +527,8 @@ MonoBehaviour:
           guid: 438387e0-8056-454a-bfca-ddca146e8468
         number: 7
     addedInventoryTask: {fileID: 0}
-  - name:
+  - icon: {fileID: 21300000, guid: fb1e4032c26c841e68491be47ff769f4, type: 3}
+    name:
       target: {fileID: 11400000, guid: 453738916714c41ddbb761f80ccf98c5, type: 2}
       value: "\u30C1\u30BF\u30F3\u30A4\u30F3\u30B4\u30C3\u30C8"
       guid: 37bc2f53-312e-458f-983c-f736f3872a0b
@@ -538,7 +562,33 @@ MonoBehaviour:
           guid: 06e4185f-0e4d-4759-b3a0-f44aa3ff3aee
         number: 7
     addedInventoryTask: {fileID: 0}
-  - name:
+  - icon: {fileID: 21300000, guid: 9e948ea9d33de4ceb858e7ed45f3e9a9, type: 3}
+    name:
+      target: {fileID: 11400000, guid: 453738916714c41ddbb761f80ccf98c5, type: 2}
+      value: "\u77F3\u306E\u30AA\u30CE"
+      guid: b9669b5c-84d9-4ad3-963e-db70bbbd3d21
+    description:
+      target: {fileID: 11400000, guid: bce9887c23ace440fad2c1da9ae2e923, type: 2}
+      value: "\u77F3\u306E\u30AA\u30CE\u306E\u8AAC\u660E"
+      guid: 3dc73802-e03f-4a9d-b2c2-8448318c2c52
+    type: 1
+    requireItem:
+      requireItems: []
+    recipe:
+      requireItems:
+      - itemName:
+          target: {fileID: 11400000, guid: 453738916714c41ddbb761f80ccf98c5, type: 2}
+          value: "\u77F3"
+          guid: 0aa5fdc5-e16f-4d05-abf4-29eb539b1e7a
+        number: 1
+      - itemName:
+          target: {fileID: 11400000, guid: 453738916714c41ddbb761f80ccf98c5, type: 2}
+          value: "\u6728\u6750"
+          guid: 31270558-457b-4279-a007-1b0bf0bf873d
+        number: 2
+    addedInventoryTask: {fileID: 0}
+  - icon: {fileID: 21300000, guid: 0c852de2762c84ddd92959084e490677, type: 3}
+    name:
       target: {fileID: 11400000, guid: 453738916714c41ddbb761f80ccf98c5, type: 2}
       value: "\u77F3\u306E\u30C4\u30EB\u30CF\u30B7"
       guid: 23554b7c-7cc7-46c2-8a36-4caa176a5906
@@ -562,7 +612,8 @@ MonoBehaviour:
           guid: 31270558-457b-4279-a007-1b0bf0bf873d
         number: 1
     addedInventoryTask: {fileID: 0}
-  - name:
+  - icon: {fileID: 21300000, guid: 0c852de2762c84ddd92959084e490677, type: 3}
+    name:
       target: {fileID: 11400000, guid: 453738916714c41ddbb761f80ccf98c5, type: 2}
       value: "\u9244\u306E\u30C4\u30EB\u30CF\u30B7"
       guid: e82af497-7793-4158-88aa-1e18b3ab1b38
@@ -586,7 +637,8 @@ MonoBehaviour:
           guid: 31270558-457b-4279-a007-1b0bf0bf873d
         number: 5
     addedInventoryTask: {fileID: 0}
-  - name:
+  - icon: {fileID: 21300000, guid: 0c852de2762c84ddd92959084e490677, type: 3}
+    name:
       target: {fileID: 11400000, guid: 453738916714c41ddbb761f80ccf98c5, type: 2}
       value: "\u9285\u306E\u30C4\u30EB\u30CF\u30B7"
       guid: a6a3ad8f-90c4-454b-8394-1e851a521bef
@@ -615,7 +667,8 @@ MonoBehaviour:
           guid: 31270558-457b-4279-a007-1b0bf0bf873d
         number: 5
     addedInventoryTask: {fileID: 0}
-  - name:
+  - icon: {fileID: 21300000, guid: 0c852de2762c84ddd92959084e490677, type: 3}
+    name:
       target: {fileID: 11400000, guid: 453738916714c41ddbb761f80ccf98c5, type: 2}
       value: "\u9280\u306E\u30C4\u30EB\u30CF\u30B7"
       guid: 909b7eca-0f71-4abf-8b28-20126d13920c
@@ -644,7 +697,8 @@ MonoBehaviour:
           guid: 31270558-457b-4279-a007-1b0bf0bf873d
         number: 5
     addedInventoryTask: {fileID: 0}
-  - name:
+  - icon: {fileID: 21300000, guid: 0c852de2762c84ddd92959084e490677, type: 3}
+    name:
       target: {fileID: 11400000, guid: 453738916714c41ddbb761f80ccf98c5, type: 2}
       value: "\u91D1\u306E\u30C4\u30EB\u30CF\u30B7"
       guid: 34e23086-8f75-4a28-80e8-c163352106e8
@@ -673,7 +727,8 @@ MonoBehaviour:
           guid: 31270558-457b-4279-a007-1b0bf0bf873d
         number: 5
     addedInventoryTask: {fileID: 0}
-  - name:
+  - icon: {fileID: 21300000, guid: 0c852de2762c84ddd92959084e490677, type: 3}
+    name:
       target: {fileID: 11400000, guid: 453738916714c41ddbb761f80ccf98c5, type: 2}
       value: "\u30DF\u30B9\u30EA\u30EB\u306E\u30C4\u30EB\u30CF\u30B7"
       guid: 884554c3-9b12-4701-acd1-c4938717f399
@@ -702,7 +757,8 @@ MonoBehaviour:
           guid: 31270558-457b-4279-a007-1b0bf0bf873d
         number: 5
     addedInventoryTask: {fileID: 0}
-  - name:
+  - icon: {fileID: 21300000, guid: 0c852de2762c84ddd92959084e490677, type: 3}
+    name:
       target: {fileID: 11400000, guid: 453738916714c41ddbb761f80ccf98c5, type: 2}
       value: "\u30C1\u30BF\u30F3\u306E\u30C4\u30EB\u30CF\u30B7"
       guid: 5fa7cf8b-cd4a-415e-ac0a-b53be5362891
@@ -731,7 +787,8 @@ MonoBehaviour:
           guid: 31270558-457b-4279-a007-1b0bf0bf873d
         number: 5
     addedInventoryTask: {fileID: 0}
-  - name:
+  - icon: {fileID: 21300000, guid: 5147e0c5552eb490fac61ca43a83685c, type: 3}
+    name:
       target: {fileID: 11400000, guid: 453738916714c41ddbb761f80ccf98c5, type: 2}
       value: "\u63A1\u96C6\u30DC\u30C3\u30C8"
       guid: f7e21cef-753a-434b-bd6a-af6dde171312
@@ -771,7 +828,8 @@ MonoBehaviour:
         number: 10
     addedInventoryTask: {fileID: 11400000, guid: 20779151102e040539922177ecfae164,
       type: 2}
-  - name:
+  - icon: {fileID: 21300000, guid: 5147e0c5552eb490fac61ca43a83685c, type: 3}
+    name:
       target: {fileID: 11400000, guid: 453738916714c41ddbb761f80ccf98c5, type: 2}
       value: "\u6728\u6750\u30DC\u30C3\u30C8"
       guid: a7ad7ff2-230a-44de-88a1-c620f2057965
@@ -811,7 +869,8 @@ MonoBehaviour:
         number: 15
     addedInventoryTask: {fileID: 11400000, guid: cd4e2a895bc924a6d9355f73f1a1bca9,
       type: 2}
-  - name:
+  - icon: {fileID: 21300000, guid: 5147e0c5552eb490fac61ca43a83685c, type: 3}
+    name:
       target: {fileID: 11400000, guid: 453738916714c41ddbb761f80ccf98c5, type: 2}
       value: "\u77F3\u70AD\u30DC\u30C3\u30C8"
       guid: 968d6023-722d-4ee7-9e17-1041905906da
@@ -851,7 +910,8 @@ MonoBehaviour:
         number: 15
     addedInventoryTask: {fileID: 11400000, guid: c2c24f85243a148c09b45a2b5d857ffd,
       type: 2}
-  - name:
+  - icon: {fileID: 21300000, guid: 5147e0c5552eb490fac61ca43a83685c, type: 3}
+    name:
       target: {fileID: 11400000, guid: 453738916714c41ddbb761f80ccf98c5, type: 2}
       value: "\u9244\u9271\u77F3\u30DC\u30C3\u30C8"
       guid: 1f41b0df-3ec7-4e98-8fdd-9aa2af6dd51f
@@ -891,7 +951,8 @@ MonoBehaviour:
         number: 45
     addedInventoryTask: {fileID: 11400000, guid: 80e1c97ed0c1141b6b3e6a54b3501a0a,
       type: 2}
-  - name:
+  - icon: {fileID: 21300000, guid: 5147e0c5552eb490fac61ca43a83685c, type: 3}
+    name:
       target: {fileID: 11400000, guid: 453738916714c41ddbb761f80ccf98c5, type: 2}
       value: "\u9285\u9271\u77F3\u30DC\u30C3\u30C8"
       guid: b000c003-881f-4019-ab80-6769bf54e104
@@ -931,7 +992,8 @@ MonoBehaviour:
         number: 60
     addedInventoryTask: {fileID: 11400000, guid: 8ad050abb541747b784591f359bc1dd6,
       type: 2}
-  - name:
+  - icon: {fileID: 21300000, guid: 5147e0c5552eb490fac61ca43a83685c, type: 3}
+    name:
       target: {fileID: 11400000, guid: 453738916714c41ddbb761f80ccf98c5, type: 2}
       value: "\u9280\u9271\u77F3\u30DC\u30C3\u30C8"
       guid: 49e40a17-3858-4729-97f2-641df599a88b
@@ -971,7 +1033,8 @@ MonoBehaviour:
         number: 90
     addedInventoryTask: {fileID: 11400000, guid: c6fdcfacae1cd4cd283b43a1c79f9498,
       type: 2}
-  - name:
+  - icon: {fileID: 21300000, guid: 5147e0c5552eb490fac61ca43a83685c, type: 3}
+    name:
       target: {fileID: 11400000, guid: 453738916714c41ddbb761f80ccf98c5, type: 2}
       value: "\u91D1\u9271\u77F3\u30DC\u30C3\u30C8"
       guid: ec30db90-1cd4-42d2-8a28-ae3f26af35d1
@@ -1011,7 +1074,8 @@ MonoBehaviour:
         number: 130
     addedInventoryTask: {fileID: 11400000, guid: e4900b49b99a7433cb15d2856cbcdc0c,
       type: 2}
-  - name:
+  - icon: {fileID: 21300000, guid: 5147e0c5552eb490fac61ca43a83685c, type: 3}
+    name:
       target: {fileID: 11400000, guid: 453738916714c41ddbb761f80ccf98c5, type: 2}
       value: "\u30DF\u30B9\u30EA\u30EB\u9271\u77F3\u30DC\u30C3\u30C8"
       guid: ef8b0bbb-4c57-416a-9480-aba530a888e9
@@ -1051,7 +1115,8 @@ MonoBehaviour:
         number: 200
     addedInventoryTask: {fileID: 11400000, guid: 4f890749f47a04434adb0844e43cd3a6,
       type: 2}
-  - name:
+  - icon: {fileID: 21300000, guid: 5147e0c5552eb490fac61ca43a83685c, type: 3}
+    name:
       target: {fileID: 11400000, guid: 453738916714c41ddbb761f80ccf98c5, type: 2}
       value: "\u30C1\u30BF\u30F3\u9271\u77F3\u30DC\u30C3\u30C8"
       guid: ec094501-b28c-472f-b81a-0e83c0f8e7d5
@@ -1091,7 +1156,8 @@ MonoBehaviour:
         number: 300
     addedInventoryTask: {fileID: 11400000, guid: ce9453503ad094467bfdc789884b02fe,
       type: 2}
-  - name:
+  - icon: {fileID: 21300000, guid: 5147e0c5552eb490fac61ca43a83685c, type: 3}
+    name:
       target: {fileID: 11400000, guid: 453738916714c41ddbb761f80ccf98c5, type: 2}
       value: "\u30C0\u30A4\u30E4\u30E2\u30F3\u30C9\u30DC\u30C3\u30C8"
       guid: 110ea009-7171-4a4f-9d85-22dfc2ffa94d
@@ -1131,7 +1197,8 @@ MonoBehaviour:
         number: 500
     addedInventoryTask: {fileID: 11400000, guid: 4c8bd3d1457e34d57a4654499a5a9bae,
       type: 2}
-  - name:
+  - icon: {fileID: 21300000, guid: 520a4e38041ff4cccb3234d7c5a1e4b6, type: 3}
+    name:
       target: {fileID: 11400000, guid: 453738916714c41ddbb761f80ccf98c5, type: 2}
       value: "\u77F3\u306E\u7089"
       guid: d1e81488-0161-4baf-b851-2551c85a403b
@@ -1165,7 +1232,8 @@ MonoBehaviour:
           guid: c0856568-7941-46f4-adcc-72a728448597
         number: 10
     addedInventoryTask: {fileID: 0}
-  - name:
+  - icon: {fileID: 21300000, guid: 520a4e38041ff4cccb3234d7c5a1e4b6, type: 3}
+    name:
       target: {fileID: 11400000, guid: 453738916714c41ddbb761f80ccf98c5, type: 2}
       value: "\u9244\u306E\u7089"
       guid: e6e07243-cb73-4c0d-b5f1-66058626972b
@@ -1199,7 +1267,8 @@ MonoBehaviour:
           guid: c0856568-7941-46f4-adcc-72a728448597
         number: 10
     addedInventoryTask: {fileID: 0}
-  - name:
+  - icon: {fileID: 21300000, guid: 520a4e38041ff4cccb3234d7c5a1e4b6, type: 3}
+    name:
       target: {fileID: 11400000, guid: 453738916714c41ddbb761f80ccf98c5, type: 2}
       value: "\u92FC\u9244\u306E\u7089"
       guid: 7ac7c433-ce0f-42d6-95ea-dccb32398cf4
@@ -1233,7 +1302,8 @@ MonoBehaviour:
           guid: d16df955-79e9-4935-9bc6-b3a5b11ae042
         number: 10
     addedInventoryTask: {fileID: 0}
-  - name:
+  - icon: {fileID: 21300000, guid: 989218e0a5a2643a6a160a4d1f317562, type: 3}
+    name:
       target: {fileID: 11400000, guid: 453738916714c41ddbb761f80ccf98c5, type: 2}
       value: "\u4F5C\u696D\u53F0"
       guid: 8c2248d1-db12-4c4f-a136-edb1dea10c24
@@ -1257,7 +1327,8 @@ MonoBehaviour:
           guid: 0aa5fdc5-e16f-4d05-abf4-29eb539b1e7a
         number: 5
     addedInventoryTask: {fileID: 0}
-  - name:
+  - icon: {fileID: 21300000, guid: 989218e0a5a2643a6a160a4d1f317562, type: 3}
+    name:
       target: {fileID: 11400000, guid: 453738916714c41ddbb761f80ccf98c5, type: 2}
       value: "\u9AD8\u7D1A\u4F5C\u696D\u53F0"
       guid: 9d3288bc-e5c4-44db-ab5b-115203298b31

@@ -15,6 +15,9 @@ namespace HK.Nanka
     public sealed class CraftElementUIController : MonoBehaviour
     {
         [SerializeField]
+        private Image icon;
+        
+        [SerializeField]
         private Text nameText;
 
         [SerializeField]
@@ -59,6 +62,7 @@ namespace HK.Nanka
         public void Initialize(Inventory inventory, ItemSpecs specs, int itemHash)
         {
             this.ItemSpec = specs.Get(itemHash);
+            this.icon.sprite = this.ItemSpec.Icon;
             this.UpdateText(inventory, this.ItemSpec);
 
             this.cachedButton.OnClickAsObservable()
