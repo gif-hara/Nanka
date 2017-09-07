@@ -1,5 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
+using HK.Framework.EventSystems;
+using HK.Nanka.Events;
 using UnityEngine;
 using UnityEngine.Assertions;
 
@@ -30,6 +32,7 @@ namespace HK.Nanka
             {
                 item.AddedInventoryTask.Do();                
             }
+            UniRxEvent.GlobalBroker.Publish(AddedItem.Get(item));
             Debug.Log(string.Format("{0} x {1}", item.Name, this.Items[itemHash]));
         }
 

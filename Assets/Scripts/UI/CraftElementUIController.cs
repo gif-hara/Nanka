@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System.Collections.Generic;
+using UnityEngine;
 using UnityEngine.UI;
 using UniRx;
 using HK.Framework.Text;
@@ -34,34 +35,54 @@ namespace HK.Nanka
 
         private Button cachedButton;
 
+        public GameObject CachedGameObject { private set; get; }
+
+        public ItemSpec ItemSpec { private set; get; }
+
         void Awake()
         {
             this.cachedButton = this.GetComponent<Button>();
+            this.CachedGameObject = this.gameObject;
         }
 
         public void Initialize(Inventory inventory, ItemSpecs specs, int itemHash)
         {
-            var spec = specs.Get(itemHash);
-            this.UpdateText(inventory, spec);
+            this.ItemSpec = specs.Get(itemHash);
+            this.UpdateText(inventory, this.ItemSpec);
 
-            UniRxEvent.GlobalBroker.Receive<Crafted>()
-                .SubscribeWithState3(this, inventory, spec, (c, _this, _inventory, _spec) =>
-                {
-                    _this.UpdateText(_inventory, _spec);
-                })
-                .AddTo(this);
-            
             this.cachedButton.OnClickAsObservable()
-                .TakeUntilDisable(this)
-                .SubscribeWithState3(inventory, specs, spec, (_, _inventory, _specs, _spec) =>
+                .Where(_ => this.isActiveAndEnabled)
+                .SubscribeWithState3(this, inventory, specs, (_, _this, _inventory, _specs) =>
                 {
-                    if(_spec.CanCreate(_inventory))
+                    if(_this.ItemSpec.CanCreate(_inventory))
                     {
-                        Craft.Crafting(_inventory, _specs, _spec.Hash);
-                        UniRxEvent.GlobalBroker.Publish(Crafted.Get(_spec.Hash));
+                        Craft.Crafting(_inventory, _specs, _this.ItemSpec.Hash);
+                        UniRxEvent.GlobalBroker.Publish(Crafted.Get(_this.ItemSpec.Hash));
                     }
                 })
                 .AddTo(this);
+            UniRxEvent.GlobalBroker.Receive<AddedItem>()
+                .Where(_ => this.isActiveAndEnabled)
+                .SubscribeWithState(this, (a, _this) =>
+                {
+                    _this.UpdateText(GameController.Instance.Player.Inventory, _this.ItemSpec);
+                })
+                .AddTo(this);
+        }
+
+        public void SetActive(List<ItemSpec> visibleList)
+        {
+            var isActive = visibleList.Find(v => v == this.ItemSpec) != null;
+            if (this.CachedGameObject.activeInHierarchy == isActive)
+            {
+                return;
+            }
+            
+            this.CachedGameObject.SetActive(isActive);
+            if (isActive)
+            {
+                this.UpdateText(GameController.Instance.Player.Inventory, this.ItemSpec);
+            }
         }
 
         private void UpdateText(Inventory inventory, ItemSpec spec)

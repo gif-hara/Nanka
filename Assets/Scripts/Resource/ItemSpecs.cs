@@ -11,6 +11,9 @@ namespace HK.Nanka
         [SerializeField]
         private List<ItemSpec> specs;
 
+        /// <summary>
+        /// 作成可能なアイテムのキャッシュ
+        /// </summary>
         public ItemSpec[] CachedCraftingSpecs { private set; get; }
 
         private Dictionary<int, ItemSpec> cachedSpecs;
