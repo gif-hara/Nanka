@@ -186,6 +186,10 @@ MonoBehaviour:
   descriptionText: {fileID: 114869302649688412}
   requireElementText: {fileID: 114580944812064310}
   requireItemText: {fileID: 114810416211014026}
+  nameFormat:
+    target: {fileID: 11400000, guid: 42add51362d84428bb10513a4efec61a, type: 2}
+    value: '{0}({1})'
+    guid: 7643b799-d2eb-4f94-ba20-288022d70a52
   requireElementHeader:
     target: {fileID: 11400000, guid: 42add51362d84428bb10513a4efec61a, type: 2}
     value: "\u5FC5\u8981\u306A\u7D20\u6750"

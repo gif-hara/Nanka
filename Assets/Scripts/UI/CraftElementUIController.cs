@@ -27,6 +27,9 @@ namespace HK.Nanka
         private Text requireItemText;
 
         [SerializeField]
+        private StringAsset.Finder nameFormat;
+
+        [SerializeField]
         private StringAsset.Finder requireElementHeader;
 
         [SerializeField]
@@ -94,7 +97,7 @@ namespace HK.Nanka
 
         private void UpdateText(Inventory inventory, ItemSpec spec)
         {
-            this.nameText.text = spec.Name;
+            this.nameText.text = this.nameFormat.Format(spec.Name, inventory.GetNumber(spec.Hash));
             this.descriptionText.text = spec.Description;
             this.BuildTextOnRecipe(inventory, spec.Recipe, this.requireElementHeader.Get, this.requireElementText);
             this.BuildTextOnRecipe(inventory, spec.RequireItem, this.requireItemHeader.Get, this.requireItemText);

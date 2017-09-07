@@ -24,3 +24,7 @@ MonoBehaviour:
       ja: "\u5FC5\u8981\u306A\u9053\u5177"
       en: 
     guid: 8df4e0d7-37e8-4da6-b63c-518db74354b6
+  - value:
+      ja: '{0}({1})'
+      en: 
+    guid: 7643b799-d2eb-4f94-ba20-288022d70a52
