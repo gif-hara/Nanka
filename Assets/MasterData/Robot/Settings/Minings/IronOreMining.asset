@@ -11,7 +11,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 971bd21d0f2984bff9b9b54fe5b08354, type: 3}
   m_Name: IronOreMining
   m_EditorClassIdentifier: 
-  maxChargeTime: 1
+  maxChargeTime: 0.3
   subChargeTime: 0.02
   task: {fileID: 11400000, guid: 2a2c3202e528142969eb020a0c317719, type: 2}
   condition: {fileID: 0}

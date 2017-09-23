@@ -11,7 +11,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 971bd21d0f2984bff9b9b54fe5b08354, type: 3}
   m_Name: DefaultMining
   m_EditorClassIdentifier: 
-  maxChargeTime: 0.2
+  maxChargeTime: 0.3
   subChargeTime: 0.02
   task: {fileID: 11400000, guid: b7380daa1a6124170b5558a3b33c1177, type: 2}
   condition: {fileID: 0}

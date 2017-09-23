@@ -365,7 +365,7 @@ MonoBehaviour:
           target: {fileID: 11400000, guid: 453738916714c41ddbb761f80ccf98c5, type: 2}
           value: "\u77F3\u70AD"
           guid: 3e32e98a-734a-4076-83dd-0d99dc2688d3
-        number: 5
+        number: 2
       - itemName:
           target: {fileID: 11400000, guid: 453738916714c41ddbb761f80ccf98c5, type: 2}
           value: "\u9244\u9271\u77F3"
@@ -395,7 +395,7 @@ MonoBehaviour:
           target: {fileID: 11400000, guid: 453738916714c41ddbb761f80ccf98c5, type: 2}
           value: "\u77F3\u70AD"
           guid: 3e32e98a-734a-4076-83dd-0d99dc2688d3
-        number: 5
+        number: 2
       - itemName:
           target: {fileID: 11400000, guid: 453738916714c41ddbb761f80ccf98c5, type: 2}
           value: "\u9285\u9271\u77F3"
@@ -425,7 +425,7 @@ MonoBehaviour:
           target: {fileID: 11400000, guid: 453738916714c41ddbb761f80ccf98c5, type: 2}
           value: "\u77F3\u70AD"
           guid: 3e32e98a-734a-4076-83dd-0d99dc2688d3
-        number: 8
+        number: 3
       - itemName:
           target: {fileID: 11400000, guid: 453738916714c41ddbb761f80ccf98c5, type: 2}
           value: "\u9244\u306E\u30A4\u30F3\u30B4\u30C3\u30C8"
@@ -455,7 +455,7 @@ MonoBehaviour:
           target: {fileID: 11400000, guid: 453738916714c41ddbb761f80ccf98c5, type: 2}
           value: "\u77F3\u70AD"
           guid: 3e32e98a-734a-4076-83dd-0d99dc2688d3
-        number: 10
+        number: 3
       - itemName:
           target: {fileID: 11400000, guid: 453738916714c41ddbb761f80ccf98c5, type: 2}
           value: "\u9280\u9271\u77F3"
@@ -485,7 +485,7 @@ MonoBehaviour:
           target: {fileID: 11400000, guid: 453738916714c41ddbb761f80ccf98c5, type: 2}
           value: "\u77F3\u70AD"
           guid: 3e32e98a-734a-4076-83dd-0d99dc2688d3
-        number: 12
+        number: 4
       - itemName:
           target: {fileID: 11400000, guid: 453738916714c41ddbb761f80ccf98c5, type: 2}
           value: "\u91D1\u9271\u77F3"
@@ -520,7 +520,7 @@ MonoBehaviour:
           target: {fileID: 11400000, guid: 453738916714c41ddbb761f80ccf98c5, type: 2}
           value: "\u77F3\u70AD"
           guid: 3e32e98a-734a-4076-83dd-0d99dc2688d3
-        number: 15
+        number: 5
       - itemName:
           target: {fileID: 11400000, guid: 453738916714c41ddbb761f80ccf98c5, type: 2}
           value: "\u30DF\u30B9\u30EA\u30EB\u9271\u77F3"
@@ -555,7 +555,7 @@ MonoBehaviour:
           target: {fileID: 11400000, guid: 453738916714c41ddbb761f80ccf98c5, type: 2}
           value: "\u77F3\u70AD"
           guid: 3e32e98a-734a-4076-83dd-0d99dc2688d3
-        number: 17
+        number: 5
       - itemName:
           target: {fileID: 11400000, guid: 453738916714c41ddbb761f80ccf98c5, type: 2}
           value: "\u30C1\u30BF\u30F3\u9271\u77F3"

@@ -11,7 +11,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 971bd21d0f2984bff9b9b54fe5b08354, type: 3}
   m_Name: DiamondMining
   m_EditorClassIdentifier: 
-  maxChargeTime: 1
+  maxChargeTime: 0.3
   subChargeTime: 0.02
   task: {fileID: 11400000, guid: 96e414329f7a344b7b0da914bfdf0434, type: 2}
   condition: {fileID: 0}
