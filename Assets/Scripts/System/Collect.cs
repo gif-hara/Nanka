@@ -25,7 +25,8 @@ namespace HK.Nanka
         public void Collecting(Inventory inventory)
         {
             // デフォルトで取得出来るアイテム
-            inventory.Add(this.defaultCollectable.RandomAcquireItemName);
+            var item = this.defaultCollectable.RandomAcquireItem;
+            inventory.Add(item.ItemHash, item.AquireNumber);
             this.UseItem(inventory);
         }
 
@@ -35,7 +36,8 @@ namespace HK.Nanka
             {
                 if(inventory.IsPossession(c.ItemHash))
                 {
-                    inventory.Add(c.RandomAcquireItemName);
+                    var item = c.RandomAcquireItem;
+                    inventory.Add(item.ItemHash, item.AquireNumber);
                     // 確率で採掘アイテムは削除される
                     if(UnityEngine.Random.Range(0.0f, 1.0f) < c.BreakProbability)
                     {
@@ -63,7 +65,7 @@ namespace HK.Nanka
 
             public List<ItemWeight> AcquireItemWeights { get { return this.acquireItemWeights; } }
 
-            public int RandomAcquireItemName
+            public ItemWeight RandomAcquireItem
             {
                 get
                 {
@@ -75,13 +77,29 @@ namespace HK.Nanka
         [Serializable]
         public class ItemWeight
         {
+            /// <summary>
+            /// 取得出来るアイテム
+            /// </summary>
             [SerializeField]
             private StringAsset.Finder itemName;
+            
+            public int ItemHash { get { return this.itemName.Get.GetHashCode(); } }
 
+            /// <summary>
+            /// 取得できる数
+            /// </summary>
+            [SerializeField]
+            private int aquireNumber = 1;
+
+            public int AquireNumber { get { return this.aquireNumber; } }
+
+            /// <summary>
+            /// 重み
+            /// </summary>
             [SerializeField]
             private int weight;
 
-            public static int Get(List<ItemWeight> weights)
+            public static ItemWeight Get(List<ItemWeight> weights)
             {
                 var totalWeight = 0;
                 foreach(var w in weights)
@@ -94,13 +112,13 @@ namespace HK.Nanka
                 {
                     if(random >= weight && random < (weight + w.weight))
                     {
-                        return w.itemName.Get.GetHashCode();
+                        return w;
                     }
                     weight += w.weight;
                 }
 
                 Assert.IsTrue(false);
-                return 0;
+                return null;
             }
         }
     }

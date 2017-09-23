@@ -13,6 +13,9 @@ namespace HK.Nanka
         [SerializeField]
         private List<RequireItem> requireItems = new List<RequireItem>();
 
+        /// <summary>
+        /// 必要なアイテム
+        /// </summary>
         public List<RequireItem> RequireItems { get { return this.requireItems; } }
 
         /// <summary>

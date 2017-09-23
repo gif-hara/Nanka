@@ -22,21 +22,25 @@ MonoBehaviour:
         target: {fileID: 11400000, guid: 453738916714c41ddbb761f80ccf98c5, type: 2}
         value: "\u77F3"
         guid: 0aa5fdc5-e16f-4d05-abf4-29eb539b1e7a
+      aquireNumber: 1
       weight: 100
     - itemName:
         target: {fileID: 11400000, guid: 453738916714c41ddbb761f80ccf98c5, type: 2}
         value: "\u6728\u6750"
         guid: 31270558-457b-4279-a007-1b0bf0bf873d
+      aquireNumber: 1
       weight: 100
     - itemName:
         target: {fileID: 11400000, guid: 453738916714c41ddbb761f80ccf98c5, type: 2}
         value: "\u77F3\u70AD"
         guid: 3e32e98a-734a-4076-83dd-0d99dc2688d3
+      aquireNumber: 1
       weight: 100
     - itemName:
         target: {fileID: 11400000, guid: 453738916714c41ddbb761f80ccf98c5, type: 2}
         value: "\u7802"
         guid: c0856568-7941-46f4-adcc-72a728448597
+      aquireNumber: 1
       weight: 100
   collectableItems:
   - itemName:
@@ -49,6 +53,7 @@ MonoBehaviour:
         target: {fileID: 11400000, guid: 453738916714c41ddbb761f80ccf98c5, type: 2}
         value: "\u6728\u6750"
         guid: 31270558-457b-4279-a007-1b0bf0bf873d
+      aquireNumber: 1
       weight: 100
   - itemName:
       target: {fileID: 11400000, guid: 453738916714c41ddbb761f80ccf98c5, type: 2}
@@ -60,16 +65,19 @@ MonoBehaviour:
         target: {fileID: 11400000, guid: 453738916714c41ddbb761f80ccf98c5, type: 2}
         value: "\u77F3"
         guid: 0aa5fdc5-e16f-4d05-abf4-29eb539b1e7a
+      aquireNumber: 1
       weight: 50
     - itemName:
         target: {fileID: 11400000, guid: 453738916714c41ddbb761f80ccf98c5, type: 2}
         value: "\u77F3\u70AD"
         guid: 3e32e98a-734a-4076-83dd-0d99dc2688d3
+      aquireNumber: 1
       weight: 50
     - itemName:
         target: {fileID: 11400000, guid: 453738916714c41ddbb761f80ccf98c5, type: 2}
         value: "\u9244\u9271\u77F3"
         guid: ffe618b7-3ffd-46b1-8010-8792f31d1e19
+      aquireNumber: 1
       weight: 100
   - itemName:
       target: {fileID: 11400000, guid: 453738916714c41ddbb761f80ccf98c5, type: 2}
@@ -81,11 +89,13 @@ MonoBehaviour:
         target: {fileID: 11400000, guid: 453738916714c41ddbb761f80ccf98c5, type: 2}
         value: "\u9244\u9271\u77F3"
         guid: ffe618b7-3ffd-46b1-8010-8792f31d1e19
+      aquireNumber: 1
       weight: 50
     - itemName:
         target: {fileID: 11400000, guid: 453738916714c41ddbb761f80ccf98c5, type: 2}
         value: "\u9285\u9271\u77F3"
         guid: f63940f4-7be7-47b4-b2bf-1d7cc7aea2c3
+      aquireNumber: 1
       weight: 100
   - itemName:
       target: {fileID: 11400000, guid: 453738916714c41ddbb761f80ccf98c5, type: 2}
@@ -97,11 +107,13 @@ MonoBehaviour:
         target: {fileID: 11400000, guid: 453738916714c41ddbb761f80ccf98c5, type: 2}
         value: "\u9285\u9271\u77F3"
         guid: f63940f4-7be7-47b4-b2bf-1d7cc7aea2c3
+      aquireNumber: 1
       weight: 50
     - itemName:
         target: {fileID: 11400000, guid: 453738916714c41ddbb761f80ccf98c5, type: 2}
         value: "\u9280\u9271\u77F3"
         guid: db78622c-77fa-42a8-a981-fdee158b3989
+      aquireNumber: 1
       weight: 100
   - itemName:
       target: {fileID: 11400000, guid: 453738916714c41ddbb761f80ccf98c5, type: 2}
@@ -113,11 +125,13 @@ MonoBehaviour:
         target: {fileID: 11400000, guid: 453738916714c41ddbb761f80ccf98c5, type: 2}
         value: "\u9280\u9271\u77F3"
         guid: db78622c-77fa-42a8-a981-fdee158b3989
+      aquireNumber: 1
       weight: 50
     - itemName:
         target: {fileID: 11400000, guid: 453738916714c41ddbb761f80ccf98c5, type: 2}
         value: "\u91D1\u9271\u77F3"
         guid: 2d1ca0fd-b35b-474f-836a-bee5a27b84b9
+      aquireNumber: 1
       weight: 100
   - itemName:
       target: {fileID: 11400000, guid: 453738916714c41ddbb761f80ccf98c5, type: 2}
@@ -129,11 +143,13 @@ MonoBehaviour:
         target: {fileID: 11400000, guid: 453738916714c41ddbb761f80ccf98c5, type: 2}
         value: "\u91D1\u9271\u77F3"
         guid: 2d1ca0fd-b35b-474f-836a-bee5a27b84b9
+      aquireNumber: 1
       weight: 50
     - itemName:
         target: {fileID: 11400000, guid: 453738916714c41ddbb761f80ccf98c5, type: 2}
         value: "\u30DF\u30B9\u30EA\u30EB\u9271\u77F3"
         guid: 438387e0-8056-454a-bfca-ddca146e8468
+      aquireNumber: 1
       weight: 100
   - itemName:
       target: {fileID: 11400000, guid: 453738916714c41ddbb761f80ccf98c5, type: 2}
@@ -145,11 +161,13 @@ MonoBehaviour:
         target: {fileID: 11400000, guid: 453738916714c41ddbb761f80ccf98c5, type: 2}
         value: "\u30DF\u30B9\u30EA\u30EB\u9271\u77F3"
         guid: 438387e0-8056-454a-bfca-ddca146e8468
+      aquireNumber: 1
       weight: 50
     - itemName:
         target: {fileID: 11400000, guid: 453738916714c41ddbb761f80ccf98c5, type: 2}
         value: "\u30C1\u30BF\u30F3\u9271\u77F3"
         guid: 06e4185f-0e4d-4759-b3a0-f44aa3ff3aee
+      aquireNumber: 1
       weight: 100
   - itemName:
       target: {fileID: 11400000, guid: 453738916714c41ddbb761f80ccf98c5, type: 2}
@@ -161,9 +179,11 @@ MonoBehaviour:
         target: {fileID: 11400000, guid: 453738916714c41ddbb761f80ccf98c5, type: 2}
         value: "\u30C1\u30BF\u30F3\u9271\u77F3"
         guid: 06e4185f-0e4d-4759-b3a0-f44aa3ff3aee
+      aquireNumber: 1
       weight: 50
     - itemName:
         target: {fileID: 11400000, guid: 453738916714c41ddbb761f80ccf98c5, type: 2}
         value: "\u30C0\u30A4\u30E4\u30E2\u30F3\u30C9"
         guid: 0d9175a2-02d9-4add-aa75-4a4d268cb83d
+      aquireNumber: 1
       weight: 100

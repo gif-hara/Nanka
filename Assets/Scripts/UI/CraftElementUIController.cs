@@ -142,7 +142,7 @@ namespace HK.Nanka
                 return;
             }
             var itemSpecs = GameController.Instance.ItemSpecs;
-            Craft.Crafting(inventory, itemSpecs, this.ItemSpec.Hash);
+            Craft.Crafting(inventory, itemSpecs, this.ItemSpec.Hash, 1);
             UniRxEvent.GlobalBroker.Publish(Crafted.Get(this.ItemSpec.Hash));
         }
     }

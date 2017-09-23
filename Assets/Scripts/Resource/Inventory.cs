@@ -16,7 +16,7 @@ namespace HK.Nanka
             this.Items = new Dictionary<int, int>();
         }
 
-        public void Add(int itemHash, int number = 1)
+        public void Add(int itemHash, int number)
         {
             Assert.IsTrue(number >= 1);
             if(!this.Items.ContainsKey(itemHash))
