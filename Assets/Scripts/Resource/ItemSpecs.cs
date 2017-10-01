@@ -31,7 +31,7 @@ namespace HK.Nanka
                 this.cachedHashes.Add(s.Name, s.Hash);
             });
             
-            this.CachedCraftingSpecs = this.specs.Where(s => s.Recipe.RequireItems.Count > 0).ToArray();
+            this.CachedCraftingSpecs = this.specs.Where(s => s.Recipe.Materials.Count > 0).ToArray();
         }
 
         public ItemSpec Get(int itemHash)

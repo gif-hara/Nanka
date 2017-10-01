@@ -45,7 +45,7 @@ namespace HK.Nanka
 
         public void Remove(Recipe recipe)
         {
-            foreach(var i in recipe.RequireItems)
+            foreach(var i in recipe.Materials)
             {
                 this.Remove(i.ItemName, i.Number);
             }

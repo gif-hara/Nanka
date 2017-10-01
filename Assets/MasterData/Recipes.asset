@@ -1,0 +1,561 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d122da039ea114c5d8bb7f3067880687, type: 3}
+  m_Name: Recipes
+  m_EditorClassIdentifier: 
+  recipes:
+  - productName:
+      target: {fileID: 11400000, guid: 453738916714c41ddbb761f80ccf98c5, type: 2}
+      value: "\u30AC\u30E9\u30B9"
+      guid: 6d239072-fb59-4c6e-b36f-d0a81d4033fa
+    number: 1
+    requireItems:
+    - itemName:
+        target: {fileID: 11400000, guid: 453738916714c41ddbb761f80ccf98c5, type: 2}
+        value: "\u77F3\u306E\u7089"
+        guid: d1e81488-0161-4baf-b851-2551c85a403b
+      number: 1
+    materials:
+    - itemName:
+        target: {fileID: 11400000, guid: 453738916714c41ddbb761f80ccf98c5, type: 2}
+        value: "\u7802"
+        guid: c0856568-7941-46f4-adcc-72a728448597
+      number: 5
+  - productName:
+      target: {fileID: 11400000, guid: 453738916714c41ddbb761f80ccf98c5, type: 2}
+      value: "\u9285\u7DDA"
+      guid: 2ac6c98c-c195-4491-b4ce-878893ab8443
+    number: 3
+    requireItems:
+    - itemName:
+        target: {fileID: 11400000, guid: 453738916714c41ddbb761f80ccf98c5, type: 2}
+        value: "\u4F5C\u696D\u53F0"
+        guid: 8c2248d1-db12-4c4f-a136-edb1dea10c24
+      number: 1
+    materials:
+    - itemName:
+        target: {fileID: 11400000, guid: 453738916714c41ddbb761f80ccf98c5, type: 2}
+        value: "\u9285\u306E\u30A4\u30F3\u30B4\u30C3\u30C8"
+        guid: d16df955-79e9-4935-9bc6-b3a5b11ae042
+      number: 1
+  - productName:
+      target: {fileID: 11400000, guid: 453738916714c41ddbb761f80ccf98c5, type: 2}
+      value: "\u9280\u9244\u96FB\u7DDA"
+      guid: 05a4e8d6-7aac-4ab3-b382-bea7b939567a
+    number: 3
+    requireItems:
+    - itemName:
+        target: {fileID: 11400000, guid: 453738916714c41ddbb761f80ccf98c5, type: 2}
+        value: "\u4F5C\u696D\u53F0"
+        guid: 8c2248d1-db12-4c4f-a136-edb1dea10c24
+      number: 1
+    materials:
+    - itemName:
+        target: {fileID: 11400000, guid: 453738916714c41ddbb761f80ccf98c5, type: 2}
+        value: "\u92FC\u9244\u306E\u30A4\u30F3\u30B4\u30C3\u30C8"
+        guid: fe5014aa-9196-4874-b7ea-6bceb74743ca
+      number: 2
+    - itemName:
+        target: {fileID: 11400000, guid: 453738916714c41ddbb761f80ccf98c5, type: 2}
+        value: "\u9280\u306E\u30A4\u30F3\u30B4\u30C3\u30C8"
+        guid: 6cef1e94-cc28-42f9-90b5-3968adb7ede5
+      number: 3
+  - productName:
+      target: {fileID: 11400000, guid: 453738916714c41ddbb761f80ccf98c5, type: 2}
+      value: "\u91D1\u9244\u96FB\u7DDA"
+      guid: 2a89cf31-95fc-4711-9311-d25eb3bedab0
+    number: 3
+    requireItems:
+    - itemName:
+        target: {fileID: 11400000, guid: 453738916714c41ddbb761f80ccf98c5, type: 2}
+        value: "\u4F5C\u696D\u53F0"
+        guid: 8c2248d1-db12-4c4f-a136-edb1dea10c24
+      number: 1
+    materials:
+    - itemName:
+        target: {fileID: 11400000, guid: 453738916714c41ddbb761f80ccf98c5, type: 2}
+        value: "\u92FC\u9244\u306E\u30A4\u30F3\u30B4\u30C3\u30C8"
+        guid: fe5014aa-9196-4874-b7ea-6bceb74743ca
+      number: 3
+    - itemName:
+        target: {fileID: 11400000, guid: 453738916714c41ddbb761f80ccf98c5, type: 2}
+        value: "\u91D1\u306E\u30A4\u30F3\u30B4\u30C3\u30C8"
+        guid: 8e73ee7d-0427-4f89-8e73-45c3106d2f3b
+      number: 3
+  - productName:
+      target: {fileID: 11400000, guid: 453738916714c41ddbb761f80ccf98c5, type: 2}
+      value: "\u96FB\u5B50\u57FA\u677F"
+      guid: d990a153-075e-4764-87cc-1e63f0f089c7
+    number: 1
+    requireItems:
+    - itemName:
+        target: {fileID: 11400000, guid: 453738916714c41ddbb761f80ccf98c5, type: 2}
+        value: "\u4F5C\u696D\u53F0"
+        guid: 8c2248d1-db12-4c4f-a136-edb1dea10c24
+      number: 1
+    materials:
+    - itemName:
+        target: {fileID: 11400000, guid: 453738916714c41ddbb761f80ccf98c5, type: 2}
+        value: "\u9244\u306E\u30A4\u30F3\u30B4\u30C3\u30C8"
+        guid: bc8f898c-83df-4fe6-ae7d-4dda1c1a01ed
+      number: 2
+    - itemName:
+        target: {fileID: 11400000, guid: 453738916714c41ddbb761f80ccf98c5, type: 2}
+        value: "\u9285\u7DDA"
+        guid: 2ac6c98c-c195-4491-b4ce-878893ab8443
+      number: 5
+  - productName:
+      target: {fileID: 11400000, guid: 453738916714c41ddbb761f80ccf98c5, type: 2}
+      value: "\u9AD8\u5EA6\u96FB\u5B50\u57FA\u677F"
+      guid: 849efe77-ee7a-4c0a-81ca-3a39a7fcdf52
+    number: 1
+    requireItems:
+    - itemName:
+        target: {fileID: 11400000, guid: 453738916714c41ddbb761f80ccf98c5, type: 2}
+        value: "\u4F5C\u696D\u53F0"
+        guid: 8c2248d1-db12-4c4f-a136-edb1dea10c24
+      number: 1
+    materials:
+    - itemName:
+        target: {fileID: 11400000, guid: 453738916714c41ddbb761f80ccf98c5, type: 2}
+        value: "\u9280\u306E\u30A4\u30F3\u30B4\u30C3\u30C8"
+        guid: 6cef1e94-cc28-42f9-90b5-3968adb7ede5
+      number: 5
+    - itemName:
+        target: {fileID: 11400000, guid: 453738916714c41ddbb761f80ccf98c5, type: 2}
+        value: "\u9280\u9244\u96FB\u7DDA"
+        guid: 05a4e8d6-7aac-4ab3-b382-bea7b939567a
+      number: 5
+    - itemName:
+        target: {fileID: 11400000, guid: 453738916714c41ddbb761f80ccf98c5, type: 2}
+        value: "\u92FC\u9244\u306E\u30A4\u30F3\u30B4\u30C3\u30C8"
+        guid: fe5014aa-9196-4874-b7ea-6bceb74743ca
+      number: 4
+  - productName:
+      target: {fileID: 11400000, guid: 453738916714c41ddbb761f80ccf98c5, type: 2}
+      value: "\u9244\u306E\u30A4\u30F3\u30B4\u30C3\u30C8"
+      guid: bc8f898c-83df-4fe6-ae7d-4dda1c1a01ed
+    number: 1
+    requireItems:
+    - itemName:
+        target: {fileID: 11400000, guid: 453738916714c41ddbb761f80ccf98c5, type: 2}
+        value: "\u77F3\u306E\u7089"
+        guid: d1e81488-0161-4baf-b851-2551c85a403b
+      number: 1
+    materials:
+    - itemName:
+        target: {fileID: 11400000, guid: 453738916714c41ddbb761f80ccf98c5, type: 2}
+        value: "\u77F3\u70AD"
+        guid: 3e32e98a-734a-4076-83dd-0d99dc2688d3
+      number: 1
+    - itemName:
+        target: {fileID: 11400000, guid: 453738916714c41ddbb761f80ccf98c5, type: 2}
+        value: "\u9244\u9271\u77F3"
+        guid: ffe618b7-3ffd-46b1-8010-8792f31d1e19
+      number: 2
+  - productName:
+      target: {fileID: 11400000, guid: 453738916714c41ddbb761f80ccf98c5, type: 2}
+      value: "\u9285\u306E\u30A4\u30F3\u30B4\u30C3\u30C8"
+      guid: d16df955-79e9-4935-9bc6-b3a5b11ae042
+    number: 1
+    requireItems:
+    - itemName:
+        target: {fileID: 11400000, guid: 453738916714c41ddbb761f80ccf98c5, type: 2}
+        value: "\u77F3\u306E\u7089"
+        guid: d1e81488-0161-4baf-b851-2551c85a403b
+      number: 1
+    materials:
+    - itemName:
+        target: {fileID: 11400000, guid: 453738916714c41ddbb761f80ccf98c5, type: 2}
+        value: "\u77F3\u70AD"
+        guid: 3e32e98a-734a-4076-83dd-0d99dc2688d3
+      number: 1
+    - itemName:
+        target: {fileID: 11400000, guid: 453738916714c41ddbb761f80ccf98c5, type: 2}
+        value: "\u9285\u9271\u77F3"
+        guid: f63940f4-7be7-47b4-b2bf-1d7cc7aea2c3
+      number: 2
+  - productName:
+      target: {fileID: 11400000, guid: 453738916714c41ddbb761f80ccf98c5, type: 2}
+      value: "\u92FC\u9244\u306E\u30A4\u30F3\u30B4\u30C3\u30C8"
+      guid: fe5014aa-9196-4874-b7ea-6bceb74743ca
+    number: 1
+    requireItems:
+    - itemName:
+        target: {fileID: 11400000, guid: 453738916714c41ddbb761f80ccf98c5, type: 2}
+        value: "\u9244\u306E\u7089"
+        guid: e6e07243-cb73-4c0d-b5f1-66058626972b
+      number: 1
+    materials:
+    - itemName:
+        target: {fileID: 11400000, guid: 453738916714c41ddbb761f80ccf98c5, type: 2}
+        value: "\u77F3\u70AD"
+        guid: 3e32e98a-734a-4076-83dd-0d99dc2688d3
+      number: 3
+    - itemName:
+        target: {fileID: 11400000, guid: 453738916714c41ddbb761f80ccf98c5, type: 2}
+        value: "\u9244\u306E\u30A4\u30F3\u30B4\u30C3\u30C8"
+        guid: bc8f898c-83df-4fe6-ae7d-4dda1c1a01ed
+      number: 2
+    - itemName:
+        target: {fileID: 11400000, guid: 453738916714c41ddbb761f80ccf98c5, type: 2}
+        value: "\u9285\u306E\u30A4\u30F3\u30B4\u30C3\u30C8"
+        guid: d16df955-79e9-4935-9bc6-b3a5b11ae042
+      number: 2
+  - productName:
+      target: {fileID: 11400000, guid: 453738916714c41ddbb761f80ccf98c5, type: 2}
+      value: "\u9280\u306E\u30A4\u30F3\u30B4\u30C3\u30C8"
+      guid: 6cef1e94-cc28-42f9-90b5-3968adb7ede5
+    number: 1
+    requireItems:
+    - itemName:
+        target: {fileID: 11400000, guid: 453738916714c41ddbb761f80ccf98c5, type: 2}
+        value: "\u9244\u306E\u7089"
+        guid: e6e07243-cb73-4c0d-b5f1-66058626972b
+      number: 1
+    materials:
+    - itemName:
+        target: {fileID: 11400000, guid: 453738916714c41ddbb761f80ccf98c5, type: 2}
+        value: "\u77F3\u70AD"
+        guid: 3e32e98a-734a-4076-83dd-0d99dc2688d3
+      number: 3
+    - itemName:
+        target: {fileID: 11400000, guid: 453738916714c41ddbb761f80ccf98c5, type: 2}
+        value: "\u9280\u9271\u77F3"
+        guid: db78622c-77fa-42a8-a981-fdee158b3989
+      number: 3
+  - productName:
+      target: {fileID: 11400000, guid: 453738916714c41ddbb761f80ccf98c5, type: 2}
+      value: "\u91D1\u306E\u30A4\u30F3\u30B4\u30C3\u30C8"
+      guid: 8e73ee7d-0427-4f89-8e73-45c3106d2f3b
+    number: 1
+    requireItems:
+    - itemName:
+        target: {fileID: 11400000, guid: 453738916714c41ddbb761f80ccf98c5, type: 2}
+        value: "\u92FC\u9244\u306E\u7089"
+        guid: 7ac7c433-ce0f-42d6-95ea-dccb32398cf4
+      number: 1
+    materials:
+    - itemName:
+        target: {fileID: 11400000, guid: 453738916714c41ddbb761f80ccf98c5, type: 2}
+        value: "\u77F3\u70AD"
+        guid: 3e32e98a-734a-4076-83dd-0d99dc2688d3
+      number: 3
+    - itemName:
+        target: {fileID: 11400000, guid: 453738916714c41ddbb761f80ccf98c5, type: 2}
+        value: "\u91D1\u9271\u77F3"
+        guid: 2d1ca0fd-b35b-474f-836a-bee5a27b84b9
+      number: 3
+  - productName:
+      target: {fileID: 11400000, guid: 453738916714c41ddbb761f80ccf98c5, type: 2}
+      value: "\u30DF\u30B9\u30EA\u30EB\u30A4\u30F3\u30B4\u30C3\u30C8"
+      guid: bcfe859d-f2cd-477c-b197-7f504c1e4a8c
+    number: 1
+    requireItems:
+    - itemName:
+        target: {fileID: 11400000, guid: 453738916714c41ddbb761f80ccf98c5, type: 2}
+        value: "\u92FC\u9244\u306E\u7089"
+        guid: 7ac7c433-ce0f-42d6-95ea-dccb32398cf4
+      number: 1
+    materials:
+    - itemName:
+        target: {fileID: 11400000, guid: 453738916714c41ddbb761f80ccf98c5, type: 2}
+        value: "\u77F3\u70AD"
+        guid: 3e32e98a-734a-4076-83dd-0d99dc2688d3
+      number: 4
+    - itemName:
+        target: {fileID: 11400000, guid: 453738916714c41ddbb761f80ccf98c5, type: 2}
+        value: "\u30DF\u30B9\u30EA\u30EB\u9271\u77F3"
+        guid: 438387e0-8056-454a-bfca-ddca146e8468
+      number: 3
+  - productName:
+      target: {fileID: 11400000, guid: 453738916714c41ddbb761f80ccf98c5, type: 2}
+      value: "\u30C1\u30BF\u30F3\u30A4\u30F3\u30B4\u30C3\u30C8"
+      guid: 37bc2f53-312e-458f-983c-f736f3872a0b
+    number: 1
+    requireItems:
+    - itemName:
+        target: {fileID: 11400000, guid: 453738916714c41ddbb761f80ccf98c5, type: 2}
+        value: "\u92FC\u9244\u306E\u7089"
+        guid: 7ac7c433-ce0f-42d6-95ea-dccb32398cf4
+      number: 1
+    materials:
+    - itemName:
+        target: {fileID: 11400000, guid: 453738916714c41ddbb761f80ccf98c5, type: 2}
+        value: "\u77F3\u70AD"
+        guid: 3e32e98a-734a-4076-83dd-0d99dc2688d3
+      number: 4
+    - itemName:
+        target: {fileID: 11400000, guid: 453738916714c41ddbb761f80ccf98c5, type: 2}
+        value: "\u30C1\u30BF\u30F3\u9271\u77F3"
+        guid: 06e4185f-0e4d-4759-b3a0-f44aa3ff3aee
+      number: 3
+  - productName:
+      target: {fileID: 11400000, guid: 453738916714c41ddbb761f80ccf98c5, type: 2}
+      value: "\u77F3\u306E\u30AA\u30CE"
+      guid: b9669b5c-84d9-4ad3-963e-db70bbbd3d21
+    number: 1
+    requireItems: []
+    materials:
+    - itemName:
+        target: {fileID: 11400000, guid: 453738916714c41ddbb761f80ccf98c5, type: 2}
+        value: "\u77F3"
+        guid: 0aa5fdc5-e16f-4d05-abf4-29eb539b1e7a
+      number: 1
+    - itemName:
+        target: {fileID: 11400000, guid: 453738916714c41ddbb761f80ccf98c5, type: 2}
+        value: "\u6728\u6750"
+        guid: 31270558-457b-4279-a007-1b0bf0bf873d
+      number: 2
+  - productName:
+      target: {fileID: 11400000, guid: 453738916714c41ddbb761f80ccf98c5, type: 2}
+      value: "\u77F3\u306E\u30C4\u30EB\u30CF\u30B7"
+      guid: 23554b7c-7cc7-46c2-8a36-4caa176a5906
+    number: 1
+    requireItems: []
+    materials:
+    - itemName:
+        target: {fileID: 11400000, guid: 453738916714c41ddbb761f80ccf98c5, type: 2}
+        value: "\u77F3"
+        guid: 0aa5fdc5-e16f-4d05-abf4-29eb539b1e7a
+      number: 2
+    - itemName:
+        target: {fileID: 11400000, guid: 453738916714c41ddbb761f80ccf98c5, type: 2}
+        value: "\u6728\u6750"
+        guid: 31270558-457b-4279-a007-1b0bf0bf873d
+      number: 1
+  - productName:
+      target: {fileID: 11400000, guid: 453738916714c41ddbb761f80ccf98c5, type: 2}
+      value: "\u9244\u306E\u30C4\u30EB\u30CF\u30B7"
+      guid: e82af497-7793-4158-88aa-1e18b3ab1b38
+    number: 1
+    requireItems: []
+    materials:
+    - itemName:
+        target: {fileID: 11400000, guid: 453738916714c41ddbb761f80ccf98c5, type: 2}
+        value: "\u9244\u306E\u30A4\u30F3\u30B4\u30C3\u30C8"
+        guid: bc8f898c-83df-4fe6-ae7d-4dda1c1a01ed
+      number: 2
+    - itemName:
+        target: {fileID: 11400000, guid: 453738916714c41ddbb761f80ccf98c5, type: 2}
+        value: "\u6728\u6750"
+        guid: 31270558-457b-4279-a007-1b0bf0bf873d
+      number: 1
+  - productName:
+      target: {fileID: 11400000, guid: 453738916714c41ddbb761f80ccf98c5, type: 2}
+      value: "\u9285\u306E\u30C4\u30EB\u30CF\u30B7"
+      guid: a6a3ad8f-90c4-454b-8394-1e851a521bef
+    number: 1
+    requireItems: []
+    materials:
+    - itemName:
+        target: {fileID: 11400000, guid: 453738916714c41ddbb761f80ccf98c5, type: 2}
+        value: "\u9285\u306E\u30A4\u30F3\u30B4\u30C3\u30C8"
+        guid: d16df955-79e9-4935-9bc6-b3a5b11ae042
+      number: 2
+    - itemName:
+        target: {fileID: 11400000, guid: 453738916714c41ddbb761f80ccf98c5, type: 2}
+        value: "\u6728\u6750"
+        guid: 31270558-457b-4279-a007-1b0bf0bf873d
+      number: 1
+  - productName:
+      target: {fileID: 11400000, guid: 453738916714c41ddbb761f80ccf98c5, type: 2}
+      value: "\u9280\u306E\u30C4\u30EB\u30CF\u30B7"
+      guid: 909b7eca-0f71-4abf-8b28-20126d13920c
+    number: 1
+    requireItems: []
+    materials:
+    - itemName:
+        target: {fileID: 11400000, guid: 453738916714c41ddbb761f80ccf98c5, type: 2}
+        value: "\u9280\u306E\u30A4\u30F3\u30B4\u30C3\u30C8"
+        guid: 6cef1e94-cc28-42f9-90b5-3968adb7ede5
+      number: 2
+    - itemName:
+        target: {fileID: 11400000, guid: 453738916714c41ddbb761f80ccf98c5, type: 2}
+        value: "\u6728\u6750"
+        guid: 31270558-457b-4279-a007-1b0bf0bf873d
+      number: 1
+  - productName:
+      target: {fileID: 11400000, guid: 453738916714c41ddbb761f80ccf98c5, type: 2}
+      value: "\u91D1\u306E\u30C4\u30EB\u30CF\u30B7"
+      guid: 34e23086-8f75-4a28-80e8-c163352106e8
+    number: 1
+    requireItems: []
+    materials:
+    - itemName:
+        target: {fileID: 11400000, guid: 453738916714c41ddbb761f80ccf98c5, type: 2}
+        value: "\u91D1\u306E\u30A4\u30F3\u30B4\u30C3\u30C8"
+        guid: 8e73ee7d-0427-4f89-8e73-45c3106d2f3b
+      number: 2
+    - itemName:
+        target: {fileID: 11400000, guid: 453738916714c41ddbb761f80ccf98c5, type: 2}
+        value: "\u6728\u6750"
+        guid: 31270558-457b-4279-a007-1b0bf0bf873d
+      number: 1
+  - productName:
+      target: {fileID: 11400000, guid: 453738916714c41ddbb761f80ccf98c5, type: 2}
+      value: "\u30DF\u30B9\u30EA\u30EB\u306E\u30C4\u30EB\u30CF\u30B7"
+      guid: 884554c3-9b12-4701-acd1-c4938717f399
+    number: 1
+    requireItems: []
+    materials:
+    - itemName:
+        target: {fileID: 11400000, guid: 453738916714c41ddbb761f80ccf98c5, type: 2}
+        value: "\u30DF\u30B9\u30EA\u30EB\u30A4\u30F3\u30B4\u30C3\u30C8"
+        guid: bcfe859d-f2cd-477c-b197-7f504c1e4a8c
+      number: 2
+    - itemName:
+        target: {fileID: 11400000, guid: 453738916714c41ddbb761f80ccf98c5, type: 2}
+        value: "\u6728\u6750"
+        guid: 31270558-457b-4279-a007-1b0bf0bf873d
+      number: 1
+  - productName:
+      target: {fileID: 11400000, guid: 453738916714c41ddbb761f80ccf98c5, type: 2}
+      value: "\u30C1\u30BF\u30F3\u306E\u30C4\u30EB\u30CF\u30B7"
+      guid: 5fa7cf8b-cd4a-415e-ac0a-b53be5362891
+    number: 1
+    requireItems: []
+    materials:
+    - itemName:
+        target: {fileID: 11400000, guid: 453738916714c41ddbb761f80ccf98c5, type: 2}
+        value: "\u30C1\u30BF\u30F3\u30A4\u30F3\u30B4\u30C3\u30C8"
+        guid: 37bc2f53-312e-458f-983c-f736f3872a0b
+      number: 2
+    - itemName:
+        target: {fileID: 11400000, guid: 453738916714c41ddbb761f80ccf98c5, type: 2}
+        value: "\u6728\u6750"
+        guid: 31270558-457b-4279-a007-1b0bf0bf873d
+      number: 1
+  - productName:
+      target: {fileID: 11400000, guid: 453738916714c41ddbb761f80ccf98c5, type: 2}
+      value: "\u77F3\u306E\u7089"
+      guid: d1e81488-0161-4baf-b851-2551c85a403b
+    number: 1
+    requireItems:
+    - itemName:
+        target: {fileID: 11400000, guid: 453738916714c41ddbb761f80ccf98c5, type: 2}
+        value: "\u4F5C\u696D\u53F0"
+        guid: 8c2248d1-db12-4c4f-a136-edb1dea10c24
+      number: 1
+    materials:
+    - itemName:
+        target: {fileID: 11400000, guid: 453738916714c41ddbb761f80ccf98c5, type: 2}
+        value: "\u77F3"
+        guid: 0aa5fdc5-e16f-4d05-abf4-29eb539b1e7a
+      number: 30
+    - itemName:
+        target: {fileID: 11400000, guid: 453738916714c41ddbb761f80ccf98c5, type: 2}
+        value: "\u6728\u6750"
+        guid: 31270558-457b-4279-a007-1b0bf0bf873d
+      number: 10
+    - itemName:
+        target: {fileID: 11400000, guid: 453738916714c41ddbb761f80ccf98c5, type: 2}
+        value: "\u7802"
+        guid: c0856568-7941-46f4-adcc-72a728448597
+      number: 10
+  - productName:
+      target: {fileID: 11400000, guid: 453738916714c41ddbb761f80ccf98c5, type: 2}
+      value: "\u9244\u306E\u7089"
+      guid: e6e07243-cb73-4c0d-b5f1-66058626972b
+    number: 1
+    requireItems:
+    - itemName:
+        target: {fileID: 11400000, guid: 453738916714c41ddbb761f80ccf98c5, type: 2}
+        value: "\u4F5C\u696D\u53F0"
+        guid: 8c2248d1-db12-4c4f-a136-edb1dea10c24
+      number: 1
+    materials:
+    - itemName:
+        target: {fileID: 11400000, guid: 453738916714c41ddbb761f80ccf98c5, type: 2}
+        value: "\u9244\u306E\u30A4\u30F3\u30B4\u30C3\u30C8"
+        guid: bc8f898c-83df-4fe6-ae7d-4dda1c1a01ed
+      number: 20
+    - itemName:
+        target: {fileID: 11400000, guid: 453738916714c41ddbb761f80ccf98c5, type: 2}
+        value: "\u6728\u6750"
+        guid: 31270558-457b-4279-a007-1b0bf0bf873d
+      number: 25
+    - itemName:
+        target: {fileID: 11400000, guid: 453738916714c41ddbb761f80ccf98c5, type: 2}
+        value: "\u7802"
+        guid: c0856568-7941-46f4-adcc-72a728448597
+      number: 10
+  - productName:
+      target: {fileID: 11400000, guid: 453738916714c41ddbb761f80ccf98c5, type: 2}
+      value: "\u92FC\u9244\u306E\u7089"
+      guid: 7ac7c433-ce0f-42d6-95ea-dccb32398cf4
+    number: 1
+    requireItems:
+    - itemName:
+        target: {fileID: 11400000, guid: 453738916714c41ddbb761f80ccf98c5, type: 2}
+        value: "\u4F5C\u696D\u53F0"
+        guid: 8c2248d1-db12-4c4f-a136-edb1dea10c24
+      number: 1
+    materials:
+    - itemName:
+        target: {fileID: 11400000, guid: 453738916714c41ddbb761f80ccf98c5, type: 2}
+        value: "\u92FC\u9244\u306E\u30A4\u30F3\u30B4\u30C3\u30C8"
+        guid: fe5014aa-9196-4874-b7ea-6bceb74743ca
+      number: 20
+    - itemName:
+        target: {fileID: 11400000, guid: 453738916714c41ddbb761f80ccf98c5, type: 2}
+        value: "\u6728\u6750"
+        guid: 31270558-457b-4279-a007-1b0bf0bf873d
+      number: 25
+    - itemName:
+        target: {fileID: 11400000, guid: 453738916714c41ddbb761f80ccf98c5, type: 2}
+        value: "\u7802"
+        guid: c0856568-7941-46f4-adcc-72a728448597
+      number: 10
+  - productName:
+      target: {fileID: 11400000, guid: 453738916714c41ddbb761f80ccf98c5, type: 2}
+      value: "\u4F5C\u696D\u53F0"
+      guid: 8c2248d1-db12-4c4f-a136-edb1dea10c24
+    number: 1
+    requireItems: []
+    materials:
+    - itemName:
+        target: {fileID: 11400000, guid: 453738916714c41ddbb761f80ccf98c5, type: 2}
+        value: "\u77F3"
+        guid: 0aa5fdc5-e16f-4d05-abf4-29eb539b1e7a
+      number: 20
+    - itemName:
+        target: {fileID: 11400000, guid: 453738916714c41ddbb761f80ccf98c5, type: 2}
+        value: "\u6728\u6750"
+        guid: 31270558-457b-4279-a007-1b0bf0bf873d
+      number: 15
+  - productName:
+      target: {fileID: 11400000, guid: 453738916714c41ddbb761f80ccf98c5, type: 2}
+      value: "\u9AD8\u7D1A\u4F5C\u696D\u53F0"
+      guid: 9d3288bc-e5c4-44db-ab5b-115203298b31
+    number: 1
+    requireItems:
+    - itemName:
+        target: {fileID: 11400000, guid: 453738916714c41ddbb761f80ccf98c5, type: 2}
+        value: "\u4F5C\u696D\u53F0"
+        guid: 8c2248d1-db12-4c4f-a136-edb1dea10c24
+      number: 1
+    materials:
+    - itemName:
+        target: {fileID: 11400000, guid: 453738916714c41ddbb761f80ccf98c5, type: 2}
+        value: "\u6728\u6750"
+        guid: 31270558-457b-4279-a007-1b0bf0bf873d
+      number: 70
+    - itemName:
+        target: {fileID: 11400000, guid: 453738916714c41ddbb761f80ccf98c5, type: 2}
+        value: "\u9280\u306E\u30A4\u30F3\u30B4\u30C3\u30C8"
+        guid: 6cef1e94-cc28-42f9-90b5-3968adb7ede5
+      number: 24
+    - itemName:
+        target: {fileID: 11400000, guid: 453738916714c41ddbb761f80ccf98c5, type: 2}
+        value: "\u91D1\u306E\u30A4\u30F3\u30B4\u30C3\u30C8"
+        guid: 8e73ee7d-0427-4f89-8e73-45c3106d2f3b
+      number: 10

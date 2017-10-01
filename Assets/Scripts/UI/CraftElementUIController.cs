@@ -111,11 +111,11 @@ namespace HK.Nanka
         {
             var builder = new StringBuilder();
             builder.AppendLine(header);
-            for(var i=0; i<recipe.RequireItems.Count; ++i)
+            for(var i=0; i<recipe.Materials.Count; ++i)
             {
-                var r = recipe.RequireItems[i];
+                var r = recipe.Materials[i];
                 builder.Append(this.requireItemFormat.Format(r.Item.Name, inventory.GetNumber(r.ItemName), r.Number));
-                if((i + 1) < recipe.RequireItems.Count)
+                if((i + 1) < recipe.Materials.Count)
                 {
                     builder.AppendLine();
                 }

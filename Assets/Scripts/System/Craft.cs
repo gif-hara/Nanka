@@ -12,7 +12,7 @@ namespace HK.Nanka
         {
             var targetItem = specs.Get(targetItemHash);
             Assert.IsNotNull(targetItem);
-            Assert.AreNotEqual(targetItem.Recipe.RequireItems.Count, 0, string.Format("{0}のレシピがありません", targetItem.Name));
+            Assert.AreNotEqual(targetItem.Recipe.Materials.Count, 0, string.Format("{0}のレシピがありません", targetItem.Name));
             inventory.Remove(targetItem.Recipe);
             inventory.Add(targetItemHash, aquireNumber);
         }
