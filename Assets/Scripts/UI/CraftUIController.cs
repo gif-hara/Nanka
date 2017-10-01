@@ -40,9 +40,9 @@ namespace HK.Nanka
 
         private void VisibleList()
         {
-            var itemSpecs = GameController.Instance.ItemSpecs;
+            var recipes = GameController.Instance.Recipes;
             var inventory = GameController.Instance.Player.Inventory;
-            var visibleList = inventory.GetCraftingList(itemSpecs);
+            var visibleList = inventory.GetCraftingList(recipes);
             this.instanceElements.ForEach(i =>
             {
                 i.SetActive(visibleList);
@@ -53,10 +53,11 @@ namespace HK.Nanka
         {
             var itemSpecs = GameController.Instance.ItemSpecs;
             var inventory = GameController.Instance.Player.Inventory;
-            foreach(var i in itemSpecs.CachedCraftingSpecs)
+            var recipes = GameController.Instance.Recipes;
+            foreach(var recipe in recipes.List)
             {
                 var element = Instantiate(this.elementPrefab, this.scrollViewParent, false);
-                element.Initialize(inventory, itemSpecs, i.Hash);
+                element.Initialize(inventory, recipe);
                 this.instanceElements.Add(element);
             }
         }

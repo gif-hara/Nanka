@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using HK.Framework.Text;
 using HK.Nanka.Tasks;
 using UnityEngine;
@@ -23,24 +24,6 @@ namespace HK.Nanka
         private ItemType type;
 
         /// <summary>
-        /// 作成するのに必要なアイテム
-        /// </summary>
-        /// <remarks>
-        /// 作業台などが指定され、このアイテムは消費されません
-        /// </remarks>
-        [SerializeField]
-        private Recipe requireItem;
-
-        /// <summary>
-        /// 作成するのに必要なアイテム
-        /// </summary>
-        /// <remarks>
-        /// 中間素材などが指定され、このアイテムは消費されます
-        /// </remarks>
-        [SerializeField]
-        private Recipe recipe;
-
-        /// <summary>
         /// インベントリに追加される際の処理
         /// </summary>
         [SerializeField]
@@ -49,11 +32,6 @@ namespace HK.Nanka
         public void Initialize()
         {
             this.hash = this.name.Get.GetHashCode();
-        }
-
-        public bool CanCreate(Inventory inventory)
-        {
-            return this.RequireItem.CanCreate(inventory) && this.Recipe.CanCreate(inventory);
         }
 
         public int Hash { get { return this.hash; } }
@@ -66,10 +44,20 @@ namespace HK.Nanka
 
         public ItemType Type { get { return this.type; } }
 
-        public Recipe RequireItem { get { return this.requireItem; } }
-
-        public Recipe Recipe { get { return this.recipe; } }
-
         public Task AddedInventoryTask { get { return this.addedInventoryTask; } }
+
+        private static Dictionary<StringAsset.Finder, int> cachedHash = new Dictionary<StringAsset.Finder, int>();
+
+        public static int ToHash(StringAsset.Finder itemName)
+        {
+            int result;
+            if (!cachedHash.TryGetValue(itemName, out result))
+            {
+                result = itemName.Get.GetHashCode();
+                cachedHash.Add(itemName, result);
+            }
+
+            return result;
+        }
     }
 }

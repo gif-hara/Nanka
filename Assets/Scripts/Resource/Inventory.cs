@@ -66,9 +66,9 @@ namespace HK.Nanka
             return this.GetNumber(itemHash) > 0;
         }
 
-        public List<ItemSpec> GetCraftingList(ItemSpecs specs)
+        public List<Recipe> GetCraftingList(Recipes recipes)
         {
-            return specs.CachedCraftingSpecs.Where(t => t.Recipe.CanVisibleList(this) && t.RequireItem.CanVisibleList(this)).ToList();
+            return recipes.List.Where(r => r.CanVisibleList(this)).ToList();
         }
     }
 }

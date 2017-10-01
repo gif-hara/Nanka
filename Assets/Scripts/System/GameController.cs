@@ -10,6 +10,9 @@ namespace HK.Nanka
         private ItemSpecs itemSpecs;
 
         [SerializeField]
+        private Recipes recipes;
+
+        [SerializeField]
         private RobotController robotController;
 
         public static GameController Instance { private set; get; }
@@ -17,6 +20,8 @@ namespace HK.Nanka
         public Player Player { private set; get; }
 
         public ItemSpecs ItemSpecs { get { return this.itemSpecs; } }
+        
+        public Recipes Recipes { get { return this.recipes; } }
 
         public RobotController RobotController { get { return this.robotController; } }
 

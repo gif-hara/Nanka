@@ -51,7 +51,10 @@ namespace HK.Nanka
 
         public GameObject CachedGameObject { private set; get; }
 
-        public ItemSpec ItemSpec { private set; get; }
+        /// <summary>
+        /// 作成するレシピ
+        /// </summary>
+        public Recipe Recipe { private set; get; }
 
         void Awake()
         {
@@ -59,11 +62,12 @@ namespace HK.Nanka
             this.CachedGameObject = this.gameObject;
         }
 
-        public void Initialize(Inventory inventory, ItemSpecs specs, int itemHash)
+        public void Initialize(Inventory inventory, Recipe recipe)
         {
-            this.ItemSpec = specs.Get(itemHash);
-            this.icon.sprite = this.ItemSpec.Icon;
-            this.UpdateText(inventory, this.ItemSpec);
+            this.Recipe = recipe;
+            var productItem = this.Recipe.ProductItemSpec;
+            this.icon.sprite = productItem.Icon;
+            this.UpdateText(inventory, this.Recipe);
 
             this.cachedButton.OnClickAsObservable()
                 .Where(_ => this.isActiveAndEnabled)
@@ -84,38 +88,39 @@ namespace HK.Nanka
                 .Where(_ => this.isActiveAndEnabled)
                 .SubscribeWithState(this, (a, _this) =>
                 {
-                    _this.UpdateText(GameController.Instance.Player.Inventory, _this.ItemSpec);
+                    _this.UpdateText(GameController.Instance.Player.Inventory, _this.Recipe);
                 })
                 .AddTo(this);
         }
 
-        public void SetActive(List<ItemSpec> visibleList)
+        public void SetActive(List<Recipe> visibleList)
         {
-            var isActive = visibleList.Find(v => v == this.ItemSpec) != null;
+            var isActive = visibleList.Find(v => v == this.Recipe) != null;
             this.CachedGameObject.SetActive(isActive);
             if (isActive)
             {
-                this.UpdateText(GameController.Instance.Player.Inventory, this.ItemSpec);
+                this.UpdateText(GameController.Instance.Player.Inventory, this.Recipe);
             }
         }
 
-        private void UpdateText(Inventory inventory, ItemSpec spec)
+        private void UpdateText(Inventory inventory, Recipe recipe)
         {
-            this.nameText.text = this.nameFormat.Format(spec.Name, inventory.GetNumber(spec.Hash));
-            this.descriptionText.text = spec.Description;
-            this.BuildTextOnRecipe(inventory, spec.Recipe, this.requireElementHeader.Get, this.requireElementText);
-            this.BuildTextOnRecipe(inventory, spec.RequireItem, this.requireItemHeader.Get, this.requireItemText);
+            var productItemSpec = recipe.ProductItemSpec;
+            this.nameText.text = this.nameFormat.Format(productItemSpec.Name, inventory.GetNumber(productItemSpec.Hash));
+            this.descriptionText.text = productItemSpec.Description;
+            this.BuildTextOnRecipe(inventory, recipe.Materials, this.requireElementHeader.Get, this.requireElementText);
+            this.BuildTextOnRecipe(inventory, recipe.RequireItems, this.requireItemHeader.Get, this.requireItemText);
         }
 
-        private void BuildTextOnRecipe(Inventory inventory, Recipe recipe, string header, Text text)
+        private void BuildTextOnRecipe(Inventory inventory, List<RequireItem> requireItems, string header, Text text)
         {
             var builder = new StringBuilder();
             builder.AppendLine(header);
-            for(var i=0; i<recipe.Materials.Count; ++i)
+            for(var i=0; i<requireItems.Count; ++i)
             {
-                var r = recipe.Materials[i];
+                var r = requireItems[i];
                 builder.Append(this.requireItemFormat.Format(r.Item.Name, inventory.GetNumber(r.ItemName), r.Number));
-                if((i + 1) < recipe.Materials.Count)
+                if((i + 1) < requireItems.Count)
                 {
                     builder.AppendLine();
                 }
@@ -137,13 +142,14 @@ namespace HK.Nanka
         private void Crafting()
         {
             var inventory = GameController.Instance.Player.Inventory;
-            if (!this.ItemSpec.CanCreate(inventory))
+            if (!this.Recipe.CanCreate(inventory))
             {
                 return;
             }
-            var itemSpecs = GameController.Instance.ItemSpecs;
-            Craft.Crafting(inventory, itemSpecs, this.ItemSpec.Hash, 1);
-            UniRxEvent.GlobalBroker.Publish(Crafted.Get(this.ItemSpec.Hash));
+            
+            var productItem = this.Recipe.ProductItemSpec;
+            Craft.Crafting(inventory, this.Recipe);
+            UniRxEvent.GlobalBroker.Publish(Crafted.Get(productItem.Hash));
         }
     }
 }

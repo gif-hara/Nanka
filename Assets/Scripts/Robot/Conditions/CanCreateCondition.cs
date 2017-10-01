@@ -17,7 +17,7 @@ namespace HK.Nanka.RobotSystems.Conditions
             get
             {
                 var gameController = GameController.Instance;
-                var itemSpec = gameController.ItemSpecs.Get(this.itemName.Get.GetHashCode());
+                var itemSpec = gameController.Recipes.List.Find(r => r.ProductItemName == itemName);
                 return itemSpec.CanCreate(gameController.Player.Inventory);
             }
         }

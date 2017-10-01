@@ -30,6 +30,15 @@ namespace HK.Nanka
         [SerializeField]
         private List<RequireItem> materials = new List<RequireItem>();
 
+        public ItemSpec ProductItemSpec
+        {
+            get { return GameController.Instance.ItemSpecs.Get(this.productName.Get.GetHashCode()); }
+        }
+
+        public StringAsset.Finder ProductItemName { get { return this.productName; } }
+
+        public int Number { get { return this.number; } }
+
         /// <summary>
         /// 必要なアイテム
         /// </summary>
@@ -48,7 +57,9 @@ namespace HK.Nanka
         /// </summary>
         public bool CanVisibleList(Inventory inventory)
         {
-            return this.materials.Find(r => !r.IsPossession(inventory)) == null;
+            var findRequireItem = this.RequireItems.Find(r => !r.IsPossession(inventory)) == null;
+            var findMaterial = this.materials.Find(r => !r.IsPossession(inventory)) == null;
+            return findRequireItem && findMaterial;
         }
 
         /// <summary>
@@ -56,7 +67,9 @@ namespace HK.Nanka
         /// </summary>
         public bool CanCreate(Inventory inventory)
         {
-            return this.materials.Find(r => !r.CanCreate(inventory)) == null;
+            var findRequireItem = this.RequireItems.Find(r => !r.CanCreate(inventory)) == null;
+            var findMaterial = this.materials.Find(r => !r.CanCreate(inventory)) == null;
+            return findRequireItem && findMaterial;
         }
     }
 }

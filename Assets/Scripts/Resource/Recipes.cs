@@ -8,5 +8,7 @@ namespace HK.Nanka
     {
         [SerializeField]
         private List<Recipe> recipes;
+
+        public List<Recipe> List { get { return this.recipes; } }
     }
 }

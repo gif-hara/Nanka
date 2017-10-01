@@ -8,13 +8,12 @@ namespace HK.Nanka
         /// <summary>
         /// アイテムを作成する
         /// </summary>
-        public static void Crafting(Inventory inventory, ItemSpecs specs, int targetItemHash, int aquireNumber)
+        public static void Crafting(Inventory inventory, Recipe recipe)
         {
-            var targetItem = specs.Get(targetItemHash);
+            var targetItem = recipe.ProductItemSpec;
             Assert.IsNotNull(targetItem);
-            Assert.AreNotEqual(targetItem.Recipe.Materials.Count, 0, string.Format("{0}のレシピがありません", targetItem.Name));
-            inventory.Remove(targetItem.Recipe);
-            inventory.Add(targetItemHash, aquireNumber);
+            inventory.Remove(recipe);
+            inventory.Add(targetItem.Hash, recipe.Number);
         }
     }
 }

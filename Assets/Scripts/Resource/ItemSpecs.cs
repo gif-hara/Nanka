@@ -11,11 +11,6 @@ namespace HK.Nanka
         [SerializeField]
         private List<ItemSpec> specs;
 
-        /// <summary>
-        /// 作成可能なアイテムのキャッシュ
-        /// </summary>
-        public ItemSpec[] CachedCraftingSpecs { private set; get; }
-
         private Dictionary<int, ItemSpec> cachedSpecs;
 
         private Dictionary<string, int> cachedHashes;
@@ -30,8 +25,6 @@ namespace HK.Nanka
                 this.cachedSpecs.Add(s.Hash, s);
                 this.cachedHashes.Add(s.Name, s.Hash);
             });
-            
-            this.CachedCraftingSpecs = this.specs.Where(s => s.Recipe.Materials.Count > 0).ToArray();
         }
 
         public ItemSpec Get(int itemHash)

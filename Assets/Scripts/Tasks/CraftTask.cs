@@ -12,7 +12,8 @@ namespace HK.Nanka.Tasks
         public override void Do()
         {
             var gameController = GameController.Instance;
-            Craft.Crafting(gameController.Player.Inventory, gameController.ItemSpecs, this.itemName.Get.GetHashCode(), 1);
+            var recipe = gameController.Recipes.List.Find(r => r.ProductItemName == itemName);
+            Craft.Crafting(gameController.Player.Inventory, recipe);
         }
     }
 }
