@@ -250,6 +250,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemSpecs: {fileID: 11400000, guid: bca7895dc2828434691a53768be8382c, type: 2}
+  recipes: {fileID: 11400000, guid: c91bc2b76796a4dc78d9d63782a88cf4, type: 2}
   robotController: {fileID: 306998958}
 --- !u!4 &306998957
 Transform:
